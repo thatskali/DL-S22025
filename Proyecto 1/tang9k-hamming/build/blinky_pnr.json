@@ -1,0 +1,2721 @@
+{
+  "creator": "Next Generation Place and Route (Version nextpnr-0.5-94-gb3c33bd0)",
+  "modules": {
+    "top": {
+      "settings": {
+        "route": "00000000000000000000000000000001",
+        "router/tmg_ripup": "0 ",
+        "router1/useEstimate": "1 ",
+        "router1/fullCleanupReroute": "1 ",
+        "router1/cleanupReroute": "1 ",
+        "router1/maxIterCnt": "200",
+        "place": "00000000000000000000000000000001",
+        "placer1/startTemp": "1.000000",
+        "placer1/budgetBased": "0 ",
+        "placer1/minBelsForGridPick": "64",
+        "placer1/netShareWeight": "0.000000",
+        "placer1/constraintWeight": "10.000000",
+        "placerHeap/cellPlacementTimeout": "8",
+        "placerHeap/netShareWeight": "0.000000",
+        "placerHeap/parallelRefine": "0 ",
+        "pack": "00000000000000000000000000000001",
+        "cst": "00000000000000000000000000000001",
+        "synth": "00000000000000000000000000000001",
+        "placerHeap/timingWeight": "10 ",
+        "placerHeap/criticalityExponent": "2",
+        "placerHeap/beta": "0.900000",
+        "placerHeap/alpha": "0.100000",
+        "seed": "01010011010110001001011110010011",
+        "arch.type": "none",
+        "arch.name": "ARCHNAME",
+        "router": "router1",
+        "placer": "heap",
+        "auto_freq": "00000000000000000000000000000000",
+        "slack_redist_iter": "00000000000000000000000000000000",
+        "timing_driven": "00000000000000000000000000000001",
+        "target_freq": "12000000.000000",
+        "arch.enable-auto-longwires": "00000000000000000000000000000000",
+        "arch.enable-globals": "00000000000000000000000000000001"
+      },
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "src/blinky.sv:1.1-8.10"
+      },
+      "ports": {
+        "led": {
+          "direction": "output",
+          "bits": [ 3877463 ]
+        },
+        "clk": {
+          "direction": "input",
+          "bits": [ 3877462 ]
+        }
+      },
+      "cells": {
+        "counter_DFF_Q_2_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R16C5_SLICE0",
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/blinky.sv:6.3-6.51|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [ 3877489 ],
+            "F": [  ],
+            "CLK": [ 3877467 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3877490 ]
+          }
+        },
+        "counter_DFF_Q_19_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R16C2_SLICE0",
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/blinky.sv:6.3-6.51|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [ 3877572 ],
+            "F": [  ],
+            "CLK": [ 3877467 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3877573 ]
+          }
+        },
+        "counter_DFF_Q_9_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R16C4_SLICE1",
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/blinky.sv:6.3-6.51|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [ 3877531 ],
+            "F": [  ],
+            "CLK": [ 3877467 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3877532 ]
+          }
+        },
+        "counter_DFF_Q_12_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R14C4_SLICE2",
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/blinky.sv:6.3-6.51|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [ 3877551 ],
+            "F": [  ],
+            "CLK": [ 3877467 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3877552 ]
+          }
+        },
+        "counter_DFF_Q_8_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R14C4_SLICE5",
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/blinky.sv:6.3-6.51|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [ 3877526 ],
+            "F": [  ],
+            "CLK": [ 3877467 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3877527 ]
+          }
+        },
+        "counter_DFF_Q_7_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R14C4_SLICE3",
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/blinky.sv:6.3-6.51|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [ 3877521 ],
+            "F": [  ],
+            "CLK": [ 3877467 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3877522 ]
+          }
+        },
+        "counter_DFF_Q_6_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R14C5_SLICE3",
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/blinky.sv:6.3-6.51|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [ 3877516 ],
+            "F": [  ],
+            "CLK": [ 3877467 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3877517 ]
+          }
+        },
+        "counter_DFF_Q_5_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R15C6_SLICE4",
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/blinky.sv:6.3-6.51|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [ 3877511 ],
+            "F": [  ],
+            "CLK": [ 3877467 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3877512 ]
+          }
+        },
+        "counter_DFF_Q_4_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R16C5_SLICE5",
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/blinky.sv:6.3-6.51|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [ 3877506 ],
+            "F": [  ],
+            "CLK": [ 3877467 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3877507 ]
+          }
+        },
+        "counter_DFF_Q_3_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R15C6_SLICE5",
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/blinky.sv:6.3-6.51|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [ 3877494 ],
+            "F": [  ],
+            "CLK": [ 3877467 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3877495 ]
+          }
+        },
+        "counter_DFF_Q_23_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R14C2_SLICE3",
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/blinky.sv:6.3-6.51|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [ 3877557 ],
+            "F": [  ],
+            "CLK": [ 3877467 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3877558 ]
+          }
+        },
+        "counter_DFF_Q_18_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R14C3_SLICE0",
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/blinky.sv:6.3-6.51|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [ 3877567 ],
+            "F": [  ],
+            "CLK": [ 3877467 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3877568 ]
+          }
+        },
+        "counter_DFF_Q_22_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R16C2_SLICE5",
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/blinky.sv:6.3-6.51|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [ 3877501 ],
+            "F": [  ],
+            "CLK": [ 3877467 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3877502 ]
+          }
+        },
+        "counter_DFF_Q_21_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R14C2_SLICE1",
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/blinky.sv:6.3-6.51|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [ 3877580 ],
+            "F": [  ],
+            "CLK": [ 3877467 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3877581 ]
+          }
+        },
+        "counter_DFF_Q_20_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R14C2_SLICE2",
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/blinky.sv:6.3-6.51|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [ 3877577 ],
+            "F": [  ],
+            "CLK": [ 3877467 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3877578 ]
+          }
+        },
+        "counter_DFF_Q_11_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R16C4_SLICE5",
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/blinky.sv:6.3-6.51|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [ 3877546 ],
+            "F": [  ],
+            "CLK": [ 3877467 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3877547 ]
+          }
+        },
+        "counter_DFF_Q_17_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R14C3_SLICE5",
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/blinky.sv:6.3-6.51|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [ 3877562 ],
+            "F": [  ],
+            "CLK": [ 3877467 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3877563 ]
+          }
+        },
+        "counter_DFF_Q_16_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R16C3_SLICE2",
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/blinky.sv:6.3-6.51|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [ 3877541 ],
+            "F": [  ],
+            "CLK": [ 3877467 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3877542 ]
+          }
+        },
+        "counter_DFF_Q_15_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R14C3_SLICE4",
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/blinky.sv:6.3-6.51|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [ 3877482 ],
+            "F": [  ],
+            "CLK": [ 3877467 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3877483 ]
+          }
+        },
+        "counter_DFF_Q_14_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R16C3_SLICE4",
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/blinky.sv:6.3-6.51|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [ 3877475 ],
+            "F": [  ],
+            "CLK": [ 3877467 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3877477 ]
+          }
+        },
+        "counter_DFF_Q_13_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R14C3_SLICE2",
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/blinky.sv:6.3-6.51|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [ 3877554 ],
+            "F": [  ],
+            "CLK": [ 3877467 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3877555 ]
+          }
+        },
+        "counter_DFF_Q_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R15C6_SLICE3",
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/blinky.sv:6.3-6.51|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [ 3877586 ],
+            "F": [  ],
+            "CLK": [ 3877467 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3877587 ]
+          }
+        },
+        "counter_DFF_Q_1_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R15C6_SLICE2",
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/blinky.sv:6.3-6.51|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [ 3877589 ],
+            "F": [  ],
+            "CLK": [ 3877467 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3877590 ]
+          }
+        },
+        "counter_DFF_Q_10_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R14C4_SLICE0",
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "src/blinky.sv:6.3-6.51|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [ 3877536 ],
+            "F": [  ],
+            "CLK": [ 3877467 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3877537 ]
+          }
+        },
+        "counter_ALU_I1_12_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R15C2_SLICE2"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3877502 ],
+            "CLK": [  ],
+            "D": [ 3877632 ],
+            "C": [ 3877632 ],
+            "B": [ 3877501 ],
+            "A": [ 3877630 ]
+          }
+        },
+        "counter_ALU_I1_23_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R15C2_SLICE1"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3877558 ],
+            "CLK": [  ],
+            "D": [ 3877632 ],
+            "C": [ 3877632 ],
+            "B": [ 3877557 ],
+            "A": [ 3877632 ]
+          }
+        },
+        "counter_ALU_I1_7_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R15C2_SLICE3"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3877581 ],
+            "CLK": [  ],
+            "D": [ 3877632 ],
+            "C": [ 3877632 ],
+            "B": [ 3877580 ],
+            "A": [ 3877630 ]
+          }
+        },
+        "counter_ALU_I1_6_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R15C2_SLICE4"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3877578 ],
+            "CLK": [  ],
+            "D": [ 3877632 ],
+            "C": [ 3877632 ],
+            "B": [ 3877577 ],
+            "A": [ 3877630 ]
+          }
+        },
+        "counter_ALU_I1_5_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R15C2_SLICE5"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3877573 ],
+            "CLK": [  ],
+            "D": [ 3877632 ],
+            "C": [ 3877632 ],
+            "B": [ 3877572 ],
+            "A": [ 3877630 ]
+          }
+        },
+        "counter_ALU_I1_23_HEAD_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "C2L",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R15C2_SLICE0"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [  ],
+            "CLK": [  ],
+            "D": [  ],
+            "C": [ 3877632 ],
+            "B": [  ],
+            "A": [  ]
+          }
+        },
+        "$PACKER_VCC": {
+          "hide_name": 1,
+          "type": "VCC",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "VCC"
+          },
+          "port_directions": {
+            "V": "output"
+          },
+          "connections": {
+            "V": [ 3877632 ]
+          }
+        },
+        "led_OBUF_O$iob": {
+          "hide_name": 0,
+          "type": "IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000001",
+            "INPUT_USED": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "R15C1_IOBA",
+            "src": "src/blinky.sv:3.18-3.21"
+          },
+          "port_directions": {
+            "O": "output",
+            "OEN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [  ],
+            "OEN": [  ],
+            "I": [ 3877619 ],
+            "PAD": [  ]
+          }
+        },
+        "clk_IBUF_I$iob": {
+          "hide_name": 0,
+          "type": "IOB",
+          "parameters": {
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000000",
+            "INPUT_USED": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R15C1_IOBB",
+            "src": "src/blinky.sv:2.18-2.21"
+          },
+          "port_directions": {
+            "O": "output",
+            "OEN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [ 3877467 ],
+            "OEN": [  ],
+            "I": [  ],
+            "PAD": [  ]
+          }
+        },
+        "counter_ALU_I1_4_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R15C3_SLICE0"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3877568 ],
+            "CLK": [  ],
+            "D": [ 3877632 ],
+            "C": [ 3877632 ],
+            "B": [ 3877567 ],
+            "A": [ 3877630 ]
+          }
+        },
+        "counter_ALU_I1_3_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R15C3_SLICE1"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3877563 ],
+            "CLK": [  ],
+            "D": [ 3877632 ],
+            "C": [ 3877632 ],
+            "B": [ 3877562 ],
+            "A": [ 3877630 ]
+          }
+        },
+        "counter_ALU_I1_2_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R15C3_SLICE2"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3877542 ],
+            "CLK": [  ],
+            "D": [ 3877632 ],
+            "C": [ 3877632 ],
+            "B": [ 3877541 ],
+            "A": [ 3877630 ]
+          }
+        },
+        "counter_ALU_I1_1_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R15C3_SLICE3"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3877483 ],
+            "CLK": [  ],
+            "D": [ 3877632 ],
+            "C": [ 3877632 ],
+            "B": [ 3877482 ],
+            "A": [ 3877630 ]
+          }
+        },
+        "counter_ALU_I1_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R15C3_SLICE4"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3877477 ],
+            "CLK": [  ],
+            "D": [ 3877632 ],
+            "C": [ 3877632 ],
+            "B": [ 3877475 ],
+            "A": [ 3877630 ]
+          }
+        },
+        "counter_ALU_I1_22_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R15C3_SLICE5"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3877555 ],
+            "CLK": [  ],
+            "D": [ 3877632 ],
+            "C": [ 3877632 ],
+            "B": [ 3877554 ],
+            "A": [ 3877630 ]
+          }
+        },
+        "counter_ALU_I1_21_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R15C4_SLICE0"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3877552 ],
+            "CLK": [  ],
+            "D": [ 3877632 ],
+            "C": [ 3877632 ],
+            "B": [ 3877551 ],
+            "A": [ 3877630 ]
+          }
+        },
+        "counter_ALU_I1_20_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R15C4_SLICE1"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3877547 ],
+            "CLK": [  ],
+            "D": [ 3877632 ],
+            "C": [ 3877632 ],
+            "B": [ 3877546 ],
+            "A": [ 3877630 ]
+          }
+        },
+        "counter_ALU_I1_19_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R15C4_SLICE2"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3877537 ],
+            "CLK": [  ],
+            "D": [ 3877632 ],
+            "C": [ 3877632 ],
+            "B": [ 3877536 ],
+            "A": [ 3877630 ]
+          }
+        },
+        "counter_ALU_I1_18_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R15C4_SLICE3"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3877532 ],
+            "CLK": [  ],
+            "D": [ 3877632 ],
+            "C": [ 3877632 ],
+            "B": [ 3877531 ],
+            "A": [ 3877630 ]
+          }
+        },
+        "counter_ALU_I1_17_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R15C4_SLICE4"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3877527 ],
+            "CLK": [  ],
+            "D": [ 3877632 ],
+            "C": [ 3877632 ],
+            "B": [ 3877526 ],
+            "A": [ 3877630 ]
+          }
+        },
+        "counter_ALU_I1_16_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R15C4_SLICE5"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3877522 ],
+            "CLK": [  ],
+            "D": [ 3877632 ],
+            "C": [ 3877632 ],
+            "B": [ 3877521 ],
+            "A": [ 3877630 ]
+          }
+        },
+        "counter_ALU_I1_15_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R15C5_SLICE0"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3877517 ],
+            "CLK": [  ],
+            "D": [ 3877632 ],
+            "C": [ 3877632 ],
+            "B": [ 3877516 ],
+            "A": [ 3877630 ]
+          }
+        },
+        "counter_ALU_I1_14_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R15C5_SLICE1"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3877512 ],
+            "CLK": [  ],
+            "D": [ 3877632 ],
+            "C": [ 3877632 ],
+            "B": [ 3877511 ],
+            "A": [ 3877630 ]
+          }
+        },
+        "counter_ALU_I1_13_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R15C5_SLICE2"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3877507 ],
+            "CLK": [  ],
+            "D": [ 3877632 ],
+            "C": [ 3877632 ],
+            "B": [ 3877506 ],
+            "A": [ 3877630 ]
+          }
+        },
+        "counter_ALU_I1_11_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R15C5_SLICE3"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3877495 ],
+            "CLK": [  ],
+            "D": [ 3877632 ],
+            "C": [ 3877632 ],
+            "B": [ 3877494 ],
+            "A": [ 3877630 ]
+          }
+        },
+        "counter_ALU_I1_10_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R15C5_SLICE4"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3877490 ],
+            "CLK": [  ],
+            "D": [ 3877632 ],
+            "C": [ 3877632 ],
+            "B": [ 3877489 ],
+            "A": [ 3877630 ]
+          }
+        },
+        "counter_ALU_I1_9_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R15C5_SLICE5"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3877590 ],
+            "CLK": [  ],
+            "D": [ 3877632 ],
+            "C": [ 3877632 ],
+            "B": [ 3877589 ],
+            "A": [ 3877630 ]
+          }
+        },
+        "counter_ALU_I1_8_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R15C6_SLICE0"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3877587 ],
+            "CLK": [  ],
+            "D": [ 3877632 ],
+            "C": [ 3877632 ],
+            "B": [ 3877586 ],
+            "A": [ 3877630 ]
+          }
+        },
+        "$PACKER_GND": {
+          "hide_name": 1,
+          "type": "GND",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "GND"
+          },
+          "port_directions": {
+            "G": "output"
+          },
+          "connections": {
+            "G": [ 3877630 ]
+          }
+        },
+        "counter_ALU_I1_8_DUMMY_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "C2L",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R15C6_SLICE1"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [  ],
+            "CLK": [  ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [  ]
+          }
+        },
+        "led_OBUF_O_I_LUT1_F_LC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "01"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R15C4_SLICE7",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:135.23-136.15"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3877619 ],
+            "CLK": [  ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3877586 ]
+          }
+        },
+        "GSR": {
+          "hide_name": 0,
+          "type": "GSR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R1C1_GSR0"
+          },
+          "port_directions": {
+            "GSRI": "input"
+          },
+          "connections": {
+            "GSRI": [ 3877632 ]
+          }
+        }
+      },
+      "netnames": {
+        "counter_DFF_Q_D[22]": {
+          "hide_name": 0,
+          "bits": [ 3877590 ] ,
+          "attributes": {
+            "ROUTING": "R15C5_F5;;1;R15C5_E25;R15C5_F5_E250;1;R15C6_A2;R15C6_E251_A2;1",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:34.28-34.29",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter[22]": {
+          "hide_name": 0,
+          "bits": [ 3877589 ] ,
+          "attributes": {
+            "ROUTING": "R15C6_Q2;;1;R15C6_W22;R15C6_Q2_W220;1;R15C5_X01;R15C5_W221_X01;1;R15C5_B5;R15C5_X01_B5;1",
+            "src": "src/blinky.sv:5.16-5.23"
+          }
+        },
+        "counter_DFF_Q_D[23]": {
+          "hide_name": 0,
+          "bits": [ 3877587 ] ,
+          "attributes": {
+            "ROUTING": "R15C6_F0;;1;R15C6_X05;R15C6_F0_X05;1;R15C6_A3;R15C6_X05_A3;1",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:34.28-34.29",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter[23]": {
+          "hide_name": 0,
+          "bits": [ 3877586 ] ,
+          "attributes": {
+            "ROUTING": "R15C6_W23;R15C6_Q3_W230;1;R15C4_X06;R15C4_W232_X06;1;R15C4_A7;R15C4_X06_A7;1;R15C6_Q3;;1;R15C6_S10;R15C6_Q3_S100;1;R15C6_B0;R15C6_S100_B0;1",
+            "src": "src/blinky.sv:5.16-5.23"
+          }
+        },
+        "counter_ALU_I1_8_COUT[23]": {
+          "hide_name": 0,
+          "bits": [ 3877585 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "unused_bits": "23",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:38.25-38.27",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter_ALU_I1_8_COUT[22]": {
+          "hide_name": 0,
+          "bits": [ 3877584 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "unused_bits": "23",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:52.24-52.25",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter_DFF_Q_D[2]": {
+          "hide_name": 0,
+          "bits": [ 3877581 ] ,
+          "attributes": {
+            "ROUTING": "R15C2_F3;;1;R15C2_SN10;R15C2_F3_SN10;1;R14C2_A1;R14C2_N111_A1;1",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:34.28-34.29",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter[2]": {
+          "hide_name": 0,
+          "bits": [ 3877580 ] ,
+          "attributes": {
+            "ROUTING": "R14C2_Q1;;1;R14C2_S21;R14C2_Q1_S210;1;R15C2_B3;R15C2_S211_B3;1",
+            "src": "src/blinky.sv:5.16-5.23"
+          }
+        },
+        "counter_DFF_Q_D[3]": {
+          "hide_name": 0,
+          "bits": [ 3877578 ] ,
+          "attributes": {
+            "ROUTING": "R15C2_F4;;1;R15C2_N24;R15C2_F4_N240;1;R14C2_X05;R14C2_N241_X05;1;R14C2_A2;R14C2_X05_A2;1",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:34.28-34.29",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter[3]": {
+          "hide_name": 0,
+          "bits": [ 3877577 ] ,
+          "attributes": {
+            "ROUTING": "R14C2_Q2;;1;R14C2_SN20;R14C2_Q2_SN20;1;R15C2_B4;R15C2_S121_B4;1",
+            "src": "src/blinky.sv:5.16-5.23"
+          }
+        },
+        "counter_ALU_I1_8_COUT[2]": {
+          "hide_name": 0,
+          "bits": [ 3877576 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "unused_bits": "23",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:52.24-52.25",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter_DFF_Q_D[4]": {
+          "hide_name": 0,
+          "bits": [ 3877573 ] ,
+          "attributes": {
+            "ROUTING": "R15C2_F5;;1;R15C2_S13;R15C2_F5_S130;1;R16C2_A0;R16C2_S131_A0;1",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:34.28-34.29",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter[4]": {
+          "hide_name": 0,
+          "bits": [ 3877572 ] ,
+          "attributes": {
+            "ROUTING": "R16C2_Q0;;1;R16C2_N10;R16C2_Q0_N100;1;R15C2_B5;R15C2_N101_B5;1",
+            "src": "src/blinky.sv:5.16-5.23"
+          }
+        },
+        "counter_ALU_I1_8_COUT[3]": {
+          "hide_name": 0,
+          "bits": [ 3877571 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "unused_bits": "23",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:52.24-52.25",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter_DFF_Q_D[5]": {
+          "hide_name": 0,
+          "bits": [ 3877568 ] ,
+          "attributes": {
+            "ROUTING": "R15C3_F0;;1;R15C3_SN10;R15C3_F0_SN10;1;R14C3_A0;R14C3_N111_A0;1",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:34.28-34.29",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter[5]": {
+          "hide_name": 0,
+          "bits": [ 3877567 ] ,
+          "attributes": {
+            "ROUTING": "R14C3_Q0;;1;R14C3_SN10;R14C3_Q0_SN10;1;R15C3_B0;R15C3_S111_B0;1",
+            "src": "src/blinky.sv:5.16-5.23"
+          }
+        },
+        "counter_ALU_I1_8_COUT[4]": {
+          "hide_name": 0,
+          "bits": [ 3877566 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "unused_bits": "23",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:52.24-52.25",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter_DFF_Q_D[6]": {
+          "hide_name": 0,
+          "bits": [ 3877563 ] ,
+          "attributes": {
+            "ROUTING": "R15C3_F1;;1;R15C3_SN20;R15C3_F1_SN20;1;R14C3_A5;R14C3_N121_A5;1",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:34.28-34.29",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter[6]": {
+          "hide_name": 0,
+          "bits": [ 3877562 ] ,
+          "attributes": {
+            "ROUTING": "R14C3_Q5;;1;R14C3_S25;R14C3_Q5_S250;1;R15C3_X04;R15C3_S251_X04;1;R15C3_B1;R15C3_X04_B1;1",
+            "src": "src/blinky.sv:5.16-5.23"
+          }
+        },
+        "counter_ALU_I1_8_COUT[5]": {
+          "hide_name": 0,
+          "bits": [ 3877561 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "unused_bits": "23",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:52.24-52.25",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter_DFF_Q_D[0]": {
+          "hide_name": 0,
+          "bits": [ 3877558 ] ,
+          "attributes": {
+            "ROUTING": "R15C2_F1;;1;R15C2_N21;R15C2_F1_N210;1;R14C2_X02;R14C2_N211_X02;1;R14C2_A3;R14C2_X02_A3;1",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:34.28-34.29",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter[0]": {
+          "hide_name": 0,
+          "bits": [ 3877557 ] ,
+          "attributes": {
+            "ROUTING": "R14C2_Q3;;1;R14C2_SN10;R14C2_Q3_SN10;1;R15C2_B1;R15C2_S111_B1;1",
+            "src": "src/blinky.sv:5.16-5.23"
+          }
+        },
+        "counter_DFF_Q_D[10]": {
+          "hide_name": 0,
+          "bits": [ 3877555 ] ,
+          "attributes": {
+            "ROUTING": "R15C3_F5;;1;R15C3_N25;R15C3_F5_N250;1;R14C3_A2;R14C3_N251_A2;1",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:34.28-34.29",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter[10]": {
+          "hide_name": 0,
+          "bits": [ 3877554 ] ,
+          "attributes": {
+            "ROUTING": "R14C3_Q2;;1;R14C3_SN20;R14C3_Q2_SN20;1;R15C3_B5;R15C3_S121_B5;1",
+            "src": "src/blinky.sv:5.16-5.23"
+          }
+        },
+        "counter_DFF_Q_D[11]": {
+          "hide_name": 0,
+          "bits": [ 3877552 ] ,
+          "attributes": {
+            "ROUTING": "R15C4_F0;;1;R15C4_SN10;R15C4_F0_SN10;1;R14C4_A2;R14C4_N111_A2;1",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:34.28-34.29",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter[11]": {
+          "hide_name": 0,
+          "bits": [ 3877551 ] ,
+          "attributes": {
+            "ROUTING": "R14C4_Q2;;1;R14C4_SN10;R14C4_Q2_SN10;1;R15C4_B0;R15C4_S111_B0;1",
+            "src": "src/blinky.sv:5.16-5.23"
+          }
+        },
+        "counter_ALU_I1_8_COUT[10]": {
+          "hide_name": 0,
+          "bits": [ 3877550 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "unused_bits": "23",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:52.24-52.25",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter_DFF_Q_D[12]": {
+          "hide_name": 0,
+          "bits": [ 3877547 ] ,
+          "attributes": {
+            "ROUTING": "R15C4_F1;;1;R15C4_S10;R15C4_F1_S100;1;R16C4_A5;R16C4_S101_A5;1",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:34.28-34.29",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter[12]": {
+          "hide_name": 0,
+          "bits": [ 3877546 ] ,
+          "attributes": {
+            "ROUTING": "R16C4_Q5;;1;R16C4_N13;R16C4_Q5_N130;1;R15C4_B1;R15C4_N131_B1;1",
+            "src": "src/blinky.sv:5.16-5.23"
+          }
+        },
+        "counter_ALU_I1_8_COUT[11]": {
+          "hide_name": 0,
+          "bits": [ 3877545 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "unused_bits": "23",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:52.24-52.25",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter_DFF_Q_D[7]": {
+          "hide_name": 0,
+          "bits": [ 3877542 ] ,
+          "attributes": {
+            "ROUTING": "R15C3_F2;;1;R15C3_S13;R15C3_F2_S130;1;R16C3_A2;R16C3_S131_A2;1",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:34.28-34.29",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter[7]": {
+          "hide_name": 0,
+          "bits": [ 3877541 ] ,
+          "attributes": {
+            "ROUTING": "R16C3_Q2;;1;R16C3_N13;R16C3_Q2_N130;1;R15C3_B2;R15C3_N131_B2;1",
+            "src": "src/blinky.sv:5.16-5.23"
+          }
+        },
+        "counter_ALU_I1_8_COUT[6]": {
+          "hide_name": 0,
+          "bits": [ 3877540 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "unused_bits": "23",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:52.24-52.25",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter_DFF_Q_D[13]": {
+          "hide_name": 0,
+          "bits": [ 3877537 ] ,
+          "attributes": {
+            "ROUTING": "R15C4_F2;;1;R15C4_N22;R15C4_F2_N220;1;R14C4_X01;R14C4_N221_X01;1;R14C4_A0;R14C4_X01_A0;1",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:34.28-34.29",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter[13]": {
+          "hide_name": 0,
+          "bits": [ 3877536 ] ,
+          "attributes": {
+            "ROUTING": "R14C4_Q0;;1;R14C4_S20;R14C4_Q0_S200;1;R15C4_X01;R15C4_S201_X01;1;R15C4_B2;R15C4_X01_B2;1",
+            "src": "src/blinky.sv:5.16-5.23"
+          }
+        },
+        "counter_ALU_I1_8_COUT[12]": {
+          "hide_name": 0,
+          "bits": [ 3877535 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "unused_bits": "23",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:52.24-52.25",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter_DFF_Q_D[14]": {
+          "hide_name": 0,
+          "bits": [ 3877532 ] ,
+          "attributes": {
+            "ROUTING": "R15C4_F3;;1;R15C4_S13;R15C4_F3_S130;1;R16C4_A1;R16C4_S131_A1;1",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:34.28-34.29",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter[14]": {
+          "hide_name": 0,
+          "bits": [ 3877531 ] ,
+          "attributes": {
+            "ROUTING": "R16C4_Q1;;1;R16C4_N21;R16C4_Q1_N210;1;R15C4_B3;R15C4_N211_B3;1",
+            "src": "src/blinky.sv:5.16-5.23"
+          }
+        },
+        "counter_ALU_I1_8_COUT[13]": {
+          "hide_name": 0,
+          "bits": [ 3877530 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "unused_bits": "23",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:52.24-52.25",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter_DFF_Q_D[15]": {
+          "hide_name": 0,
+          "bits": [ 3877527 ] ,
+          "attributes": {
+            "ROUTING": "R15C4_F4;;1;R15C4_SN20;R15C4_F4_SN20;1;R14C4_A5;R14C4_N121_A5;1",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:34.28-34.29",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter[15]": {
+          "hide_name": 0,
+          "bits": [ 3877526 ] ,
+          "attributes": {
+            "ROUTING": "R14C4_Q5;;1;R14C4_S25;R14C4_Q5_S250;1;R15C4_B4;R15C4_S251_B4;1",
+            "src": "src/blinky.sv:5.16-5.23"
+          }
+        },
+        "counter_ALU_I1_8_COUT[14]": {
+          "hide_name": 0,
+          "bits": [ 3877525 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "unused_bits": "23",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:52.24-52.25",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter_DFF_Q_D[16]": {
+          "hide_name": 0,
+          "bits": [ 3877522 ] ,
+          "attributes": {
+            "ROUTING": "R15C4_F5;;1;R15C4_N25;R15C4_F5_N250;1;R14C4_A3;R14C4_N251_A3;1",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:34.28-34.29",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter[16]": {
+          "hide_name": 0,
+          "bits": [ 3877521 ] ,
+          "attributes": {
+            "ROUTING": "R14C4_Q3;;1;R14C4_SN20;R14C4_Q3_SN20;1;R15C4_B5;R15C4_S121_B5;1",
+            "src": "src/blinky.sv:5.16-5.23"
+          }
+        },
+        "counter_ALU_I1_8_COUT[15]": {
+          "hide_name": 0,
+          "bits": [ 3877520 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "unused_bits": "23",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:52.24-52.25",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter_DFF_Q_D[17]": {
+          "hide_name": 0,
+          "bits": [ 3877517 ] ,
+          "attributes": {
+            "ROUTING": "R15C5_F0;;1;R15C5_SN10;R15C5_F0_SN10;1;R14C5_A3;R14C5_N111_A3;1",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:34.28-34.29",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter[17]": {
+          "hide_name": 0,
+          "bits": [ 3877516 ] ,
+          "attributes": {
+            "ROUTING": "R14C5_Q3;;1;R14C5_SN10;R14C5_Q3_SN10;1;R15C5_B0;R15C5_S111_B0;1",
+            "src": "src/blinky.sv:5.16-5.23"
+          }
+        },
+        "counter_ALU_I1_8_COUT[16]": {
+          "hide_name": 0,
+          "bits": [ 3877515 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "unused_bits": "23",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:52.24-52.25",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter_DFF_Q_D[18]": {
+          "hide_name": 0,
+          "bits": [ 3877512 ] ,
+          "attributes": {
+            "ROUTING": "R15C5_F1;;1;R15C5_E21;R15C5_F1_E210;1;R15C6_X06;R15C6_E211_X06;1;R15C6_A4;R15C6_X06_A4;1",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:34.28-34.29",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter[18]": {
+          "hide_name": 0,
+          "bits": [ 3877511 ] ,
+          "attributes": {
+            "ROUTING": "R15C6_Q4;;1;R15C6_W24;R15C6_Q4_W240;1;R15C5_X07;R15C5_W241_X07;1;R15C5_B1;R15C5_X07_B1;1",
+            "src": "src/blinky.sv:5.16-5.23"
+          }
+        },
+        "counter_ALU_I1_8_COUT[17]": {
+          "hide_name": 0,
+          "bits": [ 3877510 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "unused_bits": "23",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:52.24-52.25",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter_DFF_Q_D[19]": {
+          "hide_name": 0,
+          "bits": [ 3877507 ] ,
+          "attributes": {
+            "ROUTING": "R15C5_F2;;1;R15C5_S10;R15C5_F2_S100;1;R16C5_A5;R16C5_S101_A5;1",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:34.28-34.29",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter[19]": {
+          "hide_name": 0,
+          "bits": [ 3877506 ] ,
+          "attributes": {
+            "ROUTING": "R16C5_Q5;;1;R16C5_N13;R16C5_Q5_N130;1;R15C5_B2;R15C5_N131_B2;1",
+            "src": "src/blinky.sv:5.16-5.23"
+          }
+        },
+        "counter_ALU_I1_8_COUT[18]": {
+          "hide_name": 0,
+          "bits": [ 3877505 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "unused_bits": "23",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:52.24-52.25",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter_DFF_Q_D[1]": {
+          "hide_name": 0,
+          "bits": [ 3877502 ] ,
+          "attributes": {
+            "ROUTING": "R15C2_F2;;1;R15C2_S10;R15C2_F2_S100;1;R16C2_A5;R16C2_S101_A5;1",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:34.28-34.29",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter[1]": {
+          "hide_name": 0,
+          "bits": [ 3877501 ] ,
+          "attributes": {
+            "ROUTING": "R16C2_Q5;;1;R16C2_N13;R16C2_Q5_N130;1;R15C2_B2;R15C2_N131_B2;1",
+            "src": "src/blinky.sv:5.16-5.23"
+          }
+        },
+        "counter_ALU_I1_8_COUT[1]": {
+          "hide_name": 0,
+          "bits": [ 3877500 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "unused_bits": "23",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:52.24-52.25",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter_ALU_I1_8_COUT[0]": {
+          "hide_name": 0,
+          "bits": [ 3877498 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "unused_bits": "23",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:52.24-52.25",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter_DFF_Q_D[20]": {
+          "hide_name": 0,
+          "bits": [ 3877495 ] ,
+          "attributes": {
+            "ROUTING": "R15C5_F3;;1;R15C5_EW10;R15C5_F3_EW10;1;R15C6_A5;R15C6_E111_A5;1",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:34.28-34.29",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter[20]": {
+          "hide_name": 0,
+          "bits": [ 3877494 ] ,
+          "attributes": {
+            "ROUTING": "R15C6_Q5;;1;R15C6_EW10;R15C6_Q5_EW10;1;R15C5_B3;R15C5_W111_B3;1",
+            "src": "src/blinky.sv:5.16-5.23"
+          }
+        },
+        "counter_ALU_I1_8_COUT[19]": {
+          "hide_name": 0,
+          "bits": [ 3877493 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "unused_bits": "23",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:52.24-52.25",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter_DFF_Q_D[21]": {
+          "hide_name": 0,
+          "bits": [ 3877490 ] ,
+          "attributes": {
+            "ROUTING": "R15C5_F4;;1;R15C5_S13;R15C5_F4_S130;1;R16C5_A0;R16C5_S131_A0;1",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:34.28-34.29",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter[21]": {
+          "hide_name": 0,
+          "bits": [ 3877489 ] ,
+          "attributes": {
+            "ROUTING": "R16C5_Q0;;1;R16C5_N10;R16C5_Q0_N100;1;R15C5_B4;R15C5_N101_B4;1",
+            "src": "src/blinky.sv:5.16-5.23"
+          }
+        },
+        "counter_ALU_I1_8_COUT[21]": {
+          "hide_name": 0,
+          "bits": [ 3877488 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "unused_bits": "23",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:52.24-52.25",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter_ALU_I1_8_COUT[20]": {
+          "hide_name": 0,
+          "bits": [ 3877486 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "unused_bits": "23",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:52.24-52.25",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter_DFF_Q_D[8]": {
+          "hide_name": 0,
+          "bits": [ 3877483 ] ,
+          "attributes": {
+            "ROUTING": "R15C3_F3;;1;R15C3_N23;R15C3_F3_N230;1;R14C3_A4;R14C3_N231_A4;1",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:34.28-34.29",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter[8]": {
+          "hide_name": 0,
+          "bits": [ 3877482 ] ,
+          "attributes": {
+            "ROUTING": "R14C3_Q4;;1;R14C3_S24;R14C3_Q4_S240;1;R15C3_X03;R15C3_S241_X03;1;R15C3_B3;R15C3_X03_B3;1",
+            "src": "src/blinky.sv:5.16-5.23"
+          }
+        },
+        "counter_ALU_I1_8_COUT[7]": {
+          "hide_name": 0,
+          "bits": [ 3877481 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "unused_bits": "23",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:52.24-52.25",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter_DFF_Q_D[9]": {
+          "hide_name": 0,
+          "bits": [ 3877477 ] ,
+          "attributes": {
+            "ROUTING": "R15C3_F4;;1;R15C3_S10;R15C3_F4_S100;1;R16C3_A4;R16C3_S101_A4;1",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:34.28-34.29",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "$PACKER_VCC_NET": {
+          "hide_name": 1,
+          "bits": [ 3877632 ] ,
+          "attributes": {
+            "ROUTING": "R15C3_C3;R15C3_W220_C3;1;R15C2_C2;R15C2_X04_C2;1;R15C6_X04;R15C6_VCC_X04;1;R15C6_C0;R15C6_X04_C0;1;R15C2_D5;R15C2_X04_D5;1;R15C5_D1;R15C5_X08_D1;1;R15C3_D3;R15C3_X08_D3;1;R15C5_D3;R15C5_X08_D3;1;R15C2_C1;R15C2_X04_C1;1;R15C4_D5;R15C4_X04_D5;1;R15C2_C0;R15C2_X04_C0;1;R15C2_D2;R15C2_X08_D2;1;R15C5_D4;R15C5_X04_D4;1;R15C4_D2;R15C4_X08_D2;1;R15C4_D3;R15C4_X08_D3;1;R15C4_C4;R15C4_X08_C4;1;R15C2_C5;R15C2_X08_C5;1;R15C2_X04;R15C2_VCC_X04;1;R15C2_C3;R15C2_X04_C3;1;R15C3_C4;R15C3_X08_C4;1;R15C4_D4;R15C4_X04_D4;1;R15C2_D1;R15C2_X03_D1;1;R15C2_A1;R15C2_X03_A1;1;R15C4_D0;R15C4_X08_D0;1;R15C5_C0;R15C5_X04_C0;1;R15C6_X08;R15C6_VCC_X08;1;R15C6_D0;R15C6_X08_D0;1;R15C5_C1;R15C5_X04_C1;1;R15C4_C5;R15C4_X08_C5;1;R15C5_D5;R15C5_X04_D5;1;R15C5_C3;R15C5_X04_C3;1;R15C3_C5;R15C3_X08_C5;1;R15C3_C1;R15C3_N220_C1;1;R15C2_X08;R15C2_VCC_X08;1;R15C2_C4;R15C2_X08_C4;1;R15C5_D2;R15C5_X08_D2;1;R15C5_D0;R15C5_X08_D0;1;R15C4_C2;R15C4_X04_C2;1;R15C4_X08;R15C4_VCC_X08;1;R15C4_D1;R15C4_X08_D1;1;R15C4_C3;R15C4_X04_C3;1;R15C5_C4;R15C5_X08_C4;1;R15C5_X08;R15C5_VCC_X08;1;R15C5_C5;R15C5_X08_C5;1;R15C3_D2;R15C3_X08_D2;1;R1C1_W24;R1C1_VCC_W240;1;R1C1_C4;R1C1_E241_C4;1;R15C3_N22;R15C3_VCC_N220;1;R15C3_C0;R15C3_N220_C0;1;R15C3_D5;R15C3_X07_D5;1;R15C4_C1;R15C4_X04_C1;1;R15C4_X04;R15C4_VCC_X04;1;R15C4_C0;R15C4_X04_C0;1;R15C2_X03;R15C2_VCC_X03;1;R15C2_D3;R15C2_X03_D3;1;R15C3_D0;R15C3_X08_D0;1;R15C2_X07;R15C2_VCC_X07;1;R15C2_D4;R15C2_X07_D4;1;R15C3_W22;R15C3_VCC_W220;1;R15C3_C2;R15C3_W220_C2;1;R15C3_X07;R15C3_VCC_X07;1;R15C3_D4;R15C3_X07_D4;1;R15C3_X08;R15C3_VCC_X08;1;R15C3_D1;R15C3_X08_D1;1;VCC;;1;R15C5_X04;R15C5_VCC_X04;1;R15C5_C2;R15C5_X04_C2;1"
+          }
+        },
+        "counter[9]": {
+          "hide_name": 0,
+          "bits": [ 3877475 ] ,
+          "attributes": {
+            "ROUTING": "R16C3_Q4;;1;R16C3_N10;R16C3_Q4_N100;1;R15C3_B4;R15C3_N101_B4;1",
+            "src": "src/blinky.sv:5.16-5.23"
+          }
+        },
+        "$PACKER_GND_NET": {
+          "hide_name": 1,
+          "bits": [ 3877630 ] ,
+          "attributes": {
+            "ROUTING": "R15C5_A3;R15C5_N210_A3;1;R15C3_A1;R15C3_E210_A1;1;R15C3_A4;R15C3_W210_A4;1;R15C3_A2;R15C3_N210_A2;1;R15C3_W21;R15C3_VSS_W210;1;R15C3_A5;R15C3_W210_A5;1;R15C2_A4;R15C2_W210_A4;1;R15C4_A4;R15C4_W210_A4;1;R15C5_N21;R15C5_VSS_N210;1;R15C5_A2;R15C5_N210_A2;1;R15C4_A1;R15C4_E210_A1;1;R16C5_N25;R16C5_VSS_N250;1;R15C5_A1;R15C5_N251_A1;1;R15C2_A3;R15C2_E271_A3;1;R15C5_X02;R15C5_E211_X02;1;R15C5_A0;R15C5_X02_A0;1;R15C4_W21;R15C4_VSS_W210;1;R15C4_A5;R15C4_W210_A5;1;R15C6_E21;R15C6_VSS_E210;1;R15C6_A0;R15C6_E210_A0;1;R15C3_N21;R15C3_VSS_N210;1;R15C3_A3;R15C3_N210_A3;1;R15C5_A4;R15C5_W210_A4;1;R15C2_W21;R15C2_VSS_W210;1;R15C2_A5;R15C2_W210_A5;1;R15C4_A3;R15C4_N210_A3;1;R15C4_N21;R15C4_VSS_N210;1;R15C4_A2;R15C4_N210_A2;1;R15C3_E21;R15C3_VSS_E210;1;R15C3_A0;R15C3_E210_A0;1;R15C4_E21;R15C4_VSS_E210;1;R15C4_A0;R15C4_E210_A0;1;R15C5_W21;R15C5_VSS_W210;1;R15C5_A5;R15C5_W210_A5;1;VSS;;1;R15C1_E27;R15C1_VSS_E270;1;R15C2_A2;R15C2_E271_A2;1"
+          }
+        },
+        "counter_ALU_I1_8_COUT[9]": {
+          "hide_name": 0,
+          "bits": [ 3877473 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "unused_bits": "23",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:52.24-52.25",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "counter_ALU_I1_8_COUT[8]": {
+          "hide_name": 0,
+          "bits": [ 3877471 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "unused_bits": "23",
+            "src": "src/blinky.sv:6.39-6.50|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:52.24-52.25",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "clk_IBUF_I_O": {
+          "hide_name": 0,
+          "bits": [ 3877467 ] ,
+          "attributes": {
+            "ROUTING": "R16C3_CLK1;R16C3_X03_CLK1;1;R15C6_CLK1;R15C6_X03_CLK1;1;R14C3_CLK2;R14C3_E241_CLK2;1;R16C2_CLK2;R16C2_X03_CLK2;1;R15C1_EW20;R15C1_Q6_EW20;1;R15C2_S26;R15C2_E121_S260;1;R16C2_X03;R16C2_S261_X03;1;R16C2_CLK0;R16C2_X03_CLK0;1;R16C4_CLK0;R16C4_X03_CLK0;1;R16C5_CLK2;R16C5_X03_CLK2;1;R14C4_CLK0;R14C4_E242_CLK0;1;R14C3_CLK0;R14C3_E241_CLK0;1;R14C4_E24;R14C4_E242_E240;1;R14C5_CLK1;R14C5_E241_CLK1;1;R15C3_S26;R15C3_E262_S260;1;R16C3_X03;R16C3_S261_X03;1;R16C3_CLK2;R16C3_X03_CLK2;1;R15C4_S26;R15C4_E261_S260;1;R16C4_X03;R16C4_S261_X03;1;R16C4_CLK2;R16C4_X03_CLK2;1;R14C3_CLK1;R14C3_E241_CLK1;1;R14C4_CLK1;R14C4_E242_CLK1;1;R14C2_E24;R14C2_E242_E240;1;R14C4_CLK2;R14C4_E242_CLK2;1;R15C5_S26;R15C5_E262_S260;1;R16C5_X03;R16C5_S261_X03;1;R16C5_CLK0;R16C5_X03_CLK0;1;R14C2_CLK0;R14C2_E242_CLK0;1;R15C1_E26;R15C1_Q6_E260;1;R15C3_E26;R15C3_E262_E260;1;R15C5_E26;R15C5_E262_E260;1;R15C6_X03;R15C6_E261_X03;1;R15C6_CLK2;R15C6_X03_CLK2;1;R15C1_Q6;;1;R15C1_N10;R15C1_Q6_N100;1;R14C1_W24;R14C1_N101_W240;1;R14C2_CLK1;R14C2_E242_CLK1;1"
+          }
+        },
+        "led_OBUF_O_I": {
+          "hide_name": 0,
+          "bits": [ 3877619 ] ,
+          "attributes": {
+            "ROUTING": "R15C4_F7;;1;R15C4_W27;R15C4_F7_W270;1;R15C2_W27;R15C2_W272_W270;1;R15C1_A0;R15C1_E272_A0;1"
+          }
+        }
+      }
+    }
+  }
+}
