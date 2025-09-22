@@ -29,7 +29,7 @@ El objetivo del proyecto fue **llevar la teoría del código de Hamming a la pr�
 
 Se usaron testbenches para validar cada subsistema y se sintetizó el diseño completo utilizando **OssCadSuite** junto con **Yosys** y **nextpnr**.  
 
-* diagrama de bloques general del sistema.*  
+*diagrama de bloques general del sistema.*  
 
 ---
 
@@ -88,7 +88,7 @@ Se forzaron errores en distintas posiciones y se verificó que el sistema los co
 #### 1. Función
 Recibe la palabra corregida y la despliega en los LEDs de la FPGA.  
 
-* diagrama del cableado de LEDs.*  
+*diagrama del cableado de LEDs.*  
 
 ---
 
