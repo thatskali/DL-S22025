@@ -35,7 +35,7 @@ Se usaron testbenches para validar cada subsistema y se sintetizó el diseño co
 
 ## 4. Desarrollo
 
-### 4.0 Descripción general del sistema
+### 4.1 Descripción general del sistema
 El sistema se compone de los siguientes subsistemas:  
 - **SB1 – Codificador Hamming**: genera la palabra de 7 bits con paridades.  
 - **SB2 – Síndrome y corrector**: identifica la posición del error y lo corrige.  
@@ -46,7 +46,8 @@ El sistema se compone de los siguientes subsistemas:
 
 ---
 
-### 4.1 Subsistema de codificación
+### 4.2 Subsistema de codificación
+Genera el código Hamming agregando 3 bits de paridad a los 4 bits de datos.  
 #### 1. Encabezado del módulo
 ```SystemVerilog
 module hamming_secded_encoder (
@@ -54,17 +55,11 @@ module hamming_secded_encoder (
     output logic [7:0] code
 );
 ```
-#### 2. Función
-Genera el código Hamming agregando 3 bits de paridad a los 4 bits de datos.  
-
-#### 3. Testbench
-Se probaron todas las combinaciones de 4 bits verificando que las palabras codificadas coincidieran con la teoría.  
-
-*captura de simulación.*  
 
 ---
 
-### 4.2 Subsistema de síndrome y corrector
+### 4.3 Subsistema de síndrome y corrector
+Calcula el síndrome, determina si existe un error, corrige el bit afectado y entrega la palabra de 4 bits limpia.  
 #### 1. Encabezado del módulo
 ```SystemVerilog
 module hamming_secded_decoder (
@@ -74,14 +69,6 @@ module hamming_secded_decoder (
     output logic double_error
 );
 ```
-#### 2. Función
-Calcula el síndrome, determina si existe un error, corrige el bit afectado y entrega la palabra de 4 bits limpia.  
-
-#### 3. Testbench
-Se forzaron errores en distintas posiciones y se verificó que el sistema los corrigiera.  
-
-*diagrama de tiempos con la corrección.*  
-
 ---
 
 ### 4.3 Subsistema de LEDs
