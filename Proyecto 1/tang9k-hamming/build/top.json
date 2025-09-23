@@ -88,8 +88,9 @@
     },
     "DFF": {
       "attributes": {
-        "abc9_flop": "00000000000000000000000000000001",
         "blackbox": "00000000000000000000000000000001",
+        "abc9_flop": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
         "src": "C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:170.1-181.10"
       },
       "parameter_default_values": {
@@ -2049,7 +2050,7 @@
         }
       },
       "cells": {
-        "$specify$243": {
+        "$specify$163": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -2157,8 +2158,9 @@
     },
     "LUT1": {
       "attributes": {
-        "abc9_lut": "00000000000000000000000000000001",
         "blackbox": "00000000000000000000000000000001",
+        "abc9_lut": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
         "src": "C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:2.1-8.10"
       },
       "parameter_default_values": {
@@ -2175,7 +2177,7 @@
         }
       },
       "cells": {
-        "$specify$126": {
+        "$specify$46": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -2248,7 +2250,7 @@
         }
       },
       "cells": {
-        "$specify$127": {
+        "$specify$47": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -2279,7 +2281,7 @@
             "SRC": [ 3 ]
           }
         },
-        "$specify$128": {
+        "$specify$48": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -2363,7 +2365,7 @@
         }
       },
       "cells": {
-        "$specify$129": {
+        "$specify$49": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -2394,7 +2396,7 @@
             "SRC": [ 3 ]
           }
         },
-        "$specify$130": {
+        "$specify$50": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -2425,7 +2427,7 @@
             "SRC": [ 4 ]
           }
         },
-        "$specify$131": {
+        "$specify$51": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -2520,7 +2522,7 @@
         }
       },
       "cells": {
-        "$specify$132": {
+        "$specify$52": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -2551,7 +2553,7 @@
             "SRC": [ 3 ]
           }
         },
-        "$specify$133": {
+        "$specify$53": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -2582,7 +2584,7 @@
             "SRC": [ 4 ]
           }
         },
-        "$specify$134": {
+        "$specify$54": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -2613,7 +2615,7 @@
             "SRC": [ 5 ]
           }
         },
-        "$specify$135": {
+        "$specify$55": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -2708,7 +2710,7 @@
         }
       },
       "cells": {
-        "$specify$162": {
+        "$specify$82": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -2739,7 +2741,7 @@
             "SRC": [ 3 ]
           }
         },
-        "$specify$163": {
+        "$specify$83": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -2770,7 +2772,7 @@
             "SRC": [ 4 ]
           }
         },
-        "$specify$164": {
+        "$specify$84": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -2858,7 +2860,7 @@
         }
       },
       "cells": {
-        "$specify$165": {
+        "$specify$85": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -2889,7 +2891,7 @@
             "SRC": [ 3 ]
           }
         },
-        "$specify$166": {
+        "$specify$86": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -2920,7 +2922,7 @@
             "SRC": [ 4 ]
           }
         },
-        "$specify$167": {
+        "$specify$87": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -3008,7 +3010,7 @@
         }
       },
       "cells": {
-        "$specify$168": {
+        "$specify$88": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -3039,7 +3041,7 @@
             "SRC": [ 3 ]
           }
         },
-        "$specify$169": {
+        "$specify$89": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -3070,7 +3072,7 @@
             "SRC": [ 4 ]
           }
         },
-        "$specify$170": {
+        "$specify$90": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -3158,7 +3160,7 @@
         }
       },
       "cells": {
-        "$specify$171": {
+        "$specify$91": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -3189,7 +3191,7 @@
             "SRC": [ 3 ]
           }
         },
-        "$specify$172": {
+        "$specify$92": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -3220,7 +3222,7 @@
             "SRC": [ 4 ]
           }
         },
-        "$specify$173": {
+        "$specify$93": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -3308,7 +3310,7 @@
         }
       },
       "cells": {
-        "$specify$174": {
+        "$specify$94": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -3339,7 +3341,7 @@
             "SRC": [ 3 ]
           }
         },
-        "$specify$175": {
+        "$specify$95": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -3370,7 +3372,7 @@
             "SRC": [ 4 ]
           }
         },
-        "$specify$176": {
+        "$specify$96": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -3449,7 +3451,7 @@
         }
       },
       "cells": {
-        "$specify$244": {
+        "$specify$164": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -4128,7 +4130,7 @@
         }
       },
       "cells": {
-        "$specify$253": {
+        "$specify$173": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -4159,7 +4161,7 @@
             "SRC": [ 4, 5, 6, 7 ]
           }
         },
-        "$specify$254": {
+        "$specify$174": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -4194,7 +4196,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$255": {
+        "$specify$175": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -4229,7 +4231,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$256": {
+        "$specify$176": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -4264,7 +4266,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$257": {
+        "$specify$177": {
           "hide_name": 1,
           "type": "$specify3",
           "parameters": {
@@ -4373,7 +4375,7 @@
         }
       },
       "cells": {
-        "$specify$258": {
+        "$specify$178": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -4404,7 +4406,7 @@
             "SRC": [ 6, 7, 8, 9 ]
           }
         },
-        "$specify$259": {
+        "$specify$179": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -4439,7 +4441,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$260": {
+        "$specify$180": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -4474,7 +4476,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$261": {
+        "$specify$181": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -4509,7 +4511,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$262": {
+        "$specify$182": {
           "hide_name": 1,
           "type": "$specify3",
           "parameters": {
@@ -4620,7 +4622,7 @@
         }
       },
       "cells": {
-        "$specify$263": {
+        "$specify$183": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -4651,7 +4653,7 @@
             "SRC": [ 10, 11, 12, 13 ]
           }
         },
-        "$specify$264": {
+        "$specify$184": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -4686,7 +4688,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$265": {
+        "$specify$185": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -4721,7 +4723,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$266": {
+        "$specify$186": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -4756,7 +4758,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$267": {
+        "$specify$187": {
           "hide_name": 1,
           "type": "$specify3",
           "parameters": {
@@ -4868,7 +4870,7 @@
         }
       },
       "cells": {
-        "$specify$268": {
+        "$specify$188": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -4899,7 +4901,7 @@
             "SRC": [ 8, 9, 10, 11 ]
           }
         },
-        "$specify$269": {
+        "$specify$189": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -4934,7 +4936,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$270": {
+        "$specify$190": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -4969,7 +4971,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$271": {
+        "$specify$191": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -5004,7 +5006,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$272": {
+        "$specify$192": {
           "hide_name": 1,
           "type": "$specify3",
           "parameters": {
@@ -5124,7 +5126,7 @@
         }
       },
       "cells": {
-        "$specify$273": {
+        "$specify$193": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -5155,7 +5157,7 @@
             "SRC": [ 10, 11, 12, 13 ]
           }
         },
-        "$specify$274": {
+        "$specify$194": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -5190,7 +5192,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$275": {
+        "$specify$195": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -5225,7 +5227,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$276": {
+        "$specify$196": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -5260,7 +5262,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$277": {
+        "$specify$197": {
           "hide_name": 1,
           "type": "$specify3",
           "parameters": {
@@ -5382,7 +5384,7 @@
         }
       },
       "cells": {
-        "$specify$278": {
+        "$specify$198": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -5413,7 +5415,7 @@
             "SRC": [ 14, 15, 16, 17 ]
           }
         },
-        "$specify$279": {
+        "$specify$199": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -5448,7 +5450,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$280": {
+        "$specify$200": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -5483,7 +5485,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$281": {
+        "$specify$201": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -5518,7 +5520,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$282": {
+        "$specify$202": {
           "hide_name": 1,
           "type": "$specify3",
           "parameters": {
@@ -5737,7 +5739,7 @@
         }
       },
       "cells": {
-        "$specify$283": {
+        "$specify$203": {
           "hide_name": 1,
           "type": "$specify3",
           "parameters": {
@@ -5774,7 +5776,7 @@
             "SRC": [ 100 ]
           }
         },
-        "$specify$284": {
+        "$specify$204": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -5809,7 +5811,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$285": {
+        "$specify$205": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -5844,7 +5846,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$286": {
+        "$specify$206": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -5879,7 +5881,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$287": {
+        "$specify$207": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -5914,7 +5916,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$288": {
+        "$specify$208": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -5949,7 +5951,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$289": {
+        "$specify$209": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -5984,7 +5986,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$290": {
+        "$specify$210": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6019,7 +6021,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$291": {
+        "$specify$211": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6054,7 +6056,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$292": {
+        "$specify$212": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6089,7 +6091,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$293": {
+        "$specify$213": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6124,7 +6126,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$294": {
+        "$specify$214": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6159,7 +6161,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$295": {
+        "$specify$215": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6432,7 +6434,7 @@
         }
       },
       "cells": {
-        "$specify$296": {
+        "$specify$216": {
           "hide_name": 1,
           "type": "$specify3",
           "parameters": {
@@ -6469,7 +6471,7 @@
             "SRC": [ 108 ]
           }
         },
-        "$specify$297": {
+        "$specify$217": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6504,7 +6506,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$298": {
+        "$specify$218": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6539,7 +6541,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$299": {
+        "$specify$219": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6574,7 +6576,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$300": {
+        "$specify$220": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6609,7 +6611,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$301": {
+        "$specify$221": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6644,7 +6646,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$302": {
+        "$specify$222": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6679,7 +6681,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$303": {
+        "$specify$223": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6714,7 +6716,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$304": {
+        "$specify$224": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6749,7 +6751,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$305": {
+        "$specify$225": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6784,7 +6786,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$306": {
+        "$specify$226": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6819,7 +6821,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$307": {
+        "$specify$227": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6854,7 +6856,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$308": {
+        "$specify$228": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -7507,7 +7509,7 @@
         }
       },
       "cells": {
-        "$specify$136": {
+        "$specify$56": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -7538,7 +7540,7 @@
             "SRC": [ 3 ]
           }
         },
-        "$specify$137": {
+        "$specify$57": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -7569,7 +7571,7 @@
             "SRC": [ 4 ]
           }
         },
-        "$specify$138": {
+        "$specify$58": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -7600,7 +7602,7 @@
             "SRC": [ 5 ]
           }
         },
-        "$specify$139": {
+        "$specify$59": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -7631,7 +7633,7 @@
             "SRC": [ 6 ]
           }
         },
-        "$specify$140": {
+        "$specify$60": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -7746,7 +7748,7 @@
         }
       },
       "cells": {
-        "$specify$141": {
+        "$specify$61": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -7777,7 +7779,7 @@
             "SRC": [ 3 ]
           }
         },
-        "$specify$142": {
+        "$specify$62": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -7808,7 +7810,7 @@
             "SRC": [ 4 ]
           }
         },
-        "$specify$143": {
+        "$specify$63": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -7839,7 +7841,7 @@
             "SRC": [ 5 ]
           }
         },
-        "$specify$144": {
+        "$specify$64": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -7870,7 +7872,7 @@
             "SRC": [ 6 ]
           }
         },
-        "$specify$145": {
+        "$specify$65": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -7901,7 +7903,7 @@
             "SRC": [ 7 ]
           }
         },
-        "$specify$146": {
+        "$specify$66": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -8027,7 +8029,7 @@
         }
       },
       "cells": {
-        "$specify$147": {
+        "$specify$67": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -8058,7 +8060,7 @@
             "SRC": [ 3 ]
           }
         },
-        "$specify$148": {
+        "$specify$68": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -8089,7 +8091,7 @@
             "SRC": [ 4 ]
           }
         },
-        "$specify$149": {
+        "$specify$69": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -8120,7 +8122,7 @@
             "SRC": [ 5 ]
           }
         },
-        "$specify$150": {
+        "$specify$70": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -8151,7 +8153,7 @@
             "SRC": [ 6 ]
           }
         },
-        "$specify$151": {
+        "$specify$71": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -8182,7 +8184,7 @@
             "SRC": [ 7 ]
           }
         },
-        "$specify$152": {
+        "$specify$72": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -8213,7 +8215,7 @@
             "SRC": [ 8 ]
           }
         },
-        "$specify$153": {
+        "$specify$73": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -8350,7 +8352,7 @@
         }
       },
       "cells": {
-        "$specify$154": {
+        "$specify$74": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -8381,7 +8383,7 @@
             "SRC": [ 3 ]
           }
         },
-        "$specify$155": {
+        "$specify$75": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -8412,7 +8414,7 @@
             "SRC": [ 4 ]
           }
         },
-        "$specify$156": {
+        "$specify$76": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -8443,7 +8445,7 @@
             "SRC": [ 5 ]
           }
         },
-        "$specify$157": {
+        "$specify$77": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -8474,7 +8476,7 @@
             "SRC": [ 6 ]
           }
         },
-        "$specify$158": {
+        "$specify$78": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -8505,7 +8507,7 @@
             "SRC": [ 7 ]
           }
         },
-        "$specify$159": {
+        "$specify$79": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -8536,7 +8538,7 @@
             "SRC": [ 8 ]
           }
         },
-        "$specify$160": {
+        "$specify$80": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -8567,7 +8569,7 @@
             "SRC": [ 9 ]
           }
         },
-        "$specify$161": {
+        "$specify$81": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -8870,88 +8872,84 @@
     "top": {
       "attributes": {
         "top": "00000000000000000000000000000001",
-        "src": "src/top.sv:4.1-64.10"
+        "src": "src/top.sv:5.1-41.10"
       },
       "ports": {
-        "clk": {
+        "ag": {
           "direction": "input",
           "bits": [ 2 ]
         },
-        "ag": {
+        "bg": {
           "direction": "input",
           "bits": [ 3 ]
         },
-        "bg": {
+        "cg": {
           "direction": "input",
           "bits": [ 4 ]
         },
-        "cg": {
+        "dg": {
           "direction": "input",
           "bits": [ 5 ]
         },
-        "dg": {
-          "direction": "input",
-          "bits": [ 6 ]
-        },
         "led": {
           "direction": "output",
-          "bits": [ 7, 8, 9, 10 ]
+          "bits": [ 6, 7, 8, 9 ]
         },
         "au": {
           "direction": "output",
-          "bits": [ 11 ]
+          "bits": [ 10 ]
         },
         "bu": {
           "direction": "output",
-          "bits": [ 12 ]
+          "bits": [ 11 ]
         },
         "cu": {
           "direction": "output",
-          "bits": [ 13 ]
+          "bits": [ 12 ]
         },
         "du": {
           "direction": "output",
-          "bits": [ 14 ]
+          "bits": [ 13 ]
         },
         "eu": {
           "direction": "output",
-          "bits": [ 15 ]
+          "bits": [ 14 ]
         },
         "fu": {
           "direction": "output",
-          "bits": [ 16 ]
+          "bits": [ 15 ]
         },
         "gu": {
           "direction": "output",
-          "bits": [ 17 ]
+          "bits": [ 16 ]
         },
         "ad": {
           "direction": "output",
-          "bits": [ 18 ]
+          "bits": [ 17 ]
         },
         "bd": {
           "direction": "output",
-          "bits": [ 19 ]
+          "bits": [ 18 ]
         },
         "cd": {
           "direction": "output",
-          "bits": [ 20 ]
+          "bits": [ 19 ]
         },
         "dd": {
           "direction": "output",
-          "bits": [ 21 ]
+          "bits": [ 20 ]
         },
         "ed": {
           "direction": "output",
-          "bits": [ 22 ]
+          "bits": [ 21 ]
         },
         "fd": {
           "direction": "output",
-          "bits": [ 23 ]
+          "bits": [ 22 ]
         },
         "gd": {
           "direction": "output",
-          "bits": [ 24 ]
+          "bits": [ 23 ]
         }
       },
       "cells": {
@@ -8968,13 +8966,13 @@
             "O": "output"
           },
           "connections": {
-            "I": [ 25 ],
-            "O": [ 18 ]
+            "I": [ 24 ],
+            "O": [ 17 ]
           }
         },
-        "ag_IBUF_I": {
+        "au_OBUF_O": {
           "hide_name": 0,
-          "type": "IBUF",
+          "type": "OBUF",
           "parameters": {
           },
           "attributes": {
@@ -8985,53 +8983,28 @@
             "O": "output"
           },
           "connections": {
-            "I": [ 3 ],
-            "O": [ 26 ]
+            "I": [ 24 ],
+            "O": [ 10 ]
           }
         },
-        "ag_ff1_DFF_Q": {
+        "bd_OBUF_O": {
           "hide_name": 0,
-          "type": "DFF",
+          "type": "OBUF",
           "parameters": {
           },
           "attributes": {
-            "always_ff": "00000000000000000000000000000001",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:26.5-31.8|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
+            "keep": "00000000000000000000000000000001"
           },
           "port_directions": {
-            "CLK": "input",
-            "D": "input",
-            "Q": "output"
+            "I": "input",
+            "O": "output"
           },
           "connections": {
-            "CLK": [ 27 ],
-            "D": [ 26 ],
-            "Q": [ 28 ]
+            "I": [ 25 ],
+            "O": [ 18 ]
           }
         },
-        "ag_sync_DFF_Q": {
-          "hide_name": 0,
-          "type": "DFF",
-          "parameters": {
-          },
-          "attributes": {
-            "always_ff": "00000000000000000000000000000001",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:26.5-31.8|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "D": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 27 ],
-            "D": [ 28 ],
-            "Q": [ 29 ]
-          }
-        },
-        "au_OBUF_O": {
+        "bu_OBUF_O": {
           "hide_name": 0,
           "type": "OBUF",
           "parameters": {
@@ -9048,99 +9021,6 @@
             "O": [ 11 ]
           }
         },
-        "bd_OBUF_O": {
-          "hide_name": 0,
-          "type": "OBUF",
-          "parameters": {
-          },
-          "attributes": {
-            "keep": "00000000000000000000000000000001"
-          },
-          "port_directions": {
-            "I": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I": [ 30 ],
-            "O": [ 19 ]
-          }
-        },
-        "bg_IBUF_I": {
-          "hide_name": 0,
-          "type": "IBUF",
-          "parameters": {
-          },
-          "attributes": {
-            "keep": "00000000000000000000000000000001"
-          },
-          "port_directions": {
-            "I": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I": [ 4 ],
-            "O": [ 31 ]
-          }
-        },
-        "bg_ff1_DFF_Q": {
-          "hide_name": 0,
-          "type": "DFF",
-          "parameters": {
-          },
-          "attributes": {
-            "always_ff": "00000000000000000000000000000001",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:26.5-31.8|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "D": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 27 ],
-            "D": [ 31 ],
-            "Q": [ 32 ]
-          }
-        },
-        "bg_sync_DFF_Q": {
-          "hide_name": 0,
-          "type": "DFF",
-          "parameters": {
-          },
-          "attributes": {
-            "always_ff": "00000000000000000000000000000001",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:26.5-31.8|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "D": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 27 ],
-            "D": [ 32 ],
-            "Q": [ 33 ]
-          }
-        },
-        "bu_OBUF_O": {
-          "hide_name": 0,
-          "type": "OBUF",
-          "parameters": {
-          },
-          "attributes": {
-            "keep": "00000000000000000000000000000001"
-          },
-          "port_directions": {
-            "I": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I": [ 30 ],
-            "O": [ 12 ]
-          }
-        },
         "cd_OBUF_O": {
           "hide_name": 0,
           "type": "OBUF",
@@ -9154,67 +9034,8 @@
             "O": "output"
           },
           "connections": {
-            "I": [ 34 ],
-            "O": [ 20 ]
-          }
-        },
-        "cg_IBUF_I": {
-          "hide_name": 0,
-          "type": "IBUF",
-          "parameters": {
-          },
-          "attributes": {
-            "keep": "00000000000000000000000000000001"
-          },
-          "port_directions": {
-            "I": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I": [ 5 ],
-            "O": [ 35 ]
-          }
-        },
-        "cg_ff1_DFF_Q": {
-          "hide_name": 0,
-          "type": "DFF",
-          "parameters": {
-          },
-          "attributes": {
-            "always_ff": "00000000000000000000000000000001",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:26.5-31.8|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "D": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 27 ],
-            "D": [ 35 ],
-            "Q": [ 36 ]
-          }
-        },
-        "cg_sync_DFF_Q": {
-          "hide_name": 0,
-          "type": "DFF",
-          "parameters": {
-          },
-          "attributes": {
-            "always_ff": "00000000000000000000000000000001",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:26.5-31.8|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "D": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 27 ],
-            "D": [ 36 ],
-            "Q": [ 37 ]
+            "I": [ 26 ],
+            "O": [ 19 ]
           }
         },
         "cu_OBUF_O": {
@@ -9230,8 +9051,8 @@
             "O": "output"
           },
           "connections": {
-            "I": [ 34 ],
-            "O": [ 13 ]
+            "I": [ 26 ],
+            "O": [ 12 ]
           }
         },
         "dd_OBUF_O": {
@@ -9247,67 +9068,8 @@
             "O": "output"
           },
           "connections": {
-            "I": [ 38 ],
-            "O": [ 21 ]
-          }
-        },
-        "dg_IBUF_I": {
-          "hide_name": 0,
-          "type": "IBUF",
-          "parameters": {
-          },
-          "attributes": {
-            "keep": "00000000000000000000000000000001"
-          },
-          "port_directions": {
-            "I": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I": [ 6 ],
-            "O": [ 39 ]
-          }
-        },
-        "dg_ff1_DFF_Q": {
-          "hide_name": 0,
-          "type": "DFF",
-          "parameters": {
-          },
-          "attributes": {
-            "always_ff": "00000000000000000000000000000001",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:26.5-31.8|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "D": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 27 ],
-            "D": [ 39 ],
-            "Q": [ 40 ]
-          }
-        },
-        "dg_sync_DFF_Q": {
-          "hide_name": 0,
-          "type": "DFF",
-          "parameters": {
-          },
-          "attributes": {
-            "always_ff": "00000000000000000000000000000001",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "src/top.sv:26.5-31.8|C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "D": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 27 ],
-            "D": [ 40 ],
-            "Q": [ 41 ]
+            "I": [ 27 ],
+            "O": [ 20 ]
           }
         },
         "du_OBUF_O": {
@@ -9323,8 +9085,8 @@
             "O": "output"
           },
           "connections": {
-            "I": [ 38 ],
-            "O": [ 14 ]
+            "I": [ 27 ],
+            "O": [ 13 ]
           }
         },
         "ed_OBUF_O": {
@@ -9340,8 +9102,8 @@
             "O": "output"
           },
           "connections": {
-            "I": [ 42 ],
-            "O": [ 22 ]
+            "I": [ 28 ],
+            "O": [ 21 ]
           }
         },
         "eu_OBUF_O": {
@@ -9357,8 +9119,8 @@
             "O": "output"
           },
           "connections": {
-            "I": [ 42 ],
-            "O": [ 15 ]
+            "I": [ 28 ],
+            "O": [ 14 ]
           }
         },
         "fd_OBUF_O": {
@@ -9374,8 +9136,8 @@
             "O": "output"
           },
           "connections": {
-            "I": [ 43 ],
-            "O": [ 23 ]
+            "I": [ 29 ],
+            "O": [ 22 ]
           }
         },
         "fu_OBUF_O": {
@@ -9391,8 +9153,8 @@
             "O": "output"
           },
           "connections": {
-            "I": [ 43 ],
-            "O": [ 16 ]
+            "I": [ 29 ],
+            "O": [ 15 ]
           }
         },
         "gd_OBUF_O": {
@@ -9408,8 +9170,8 @@
             "O": "output"
           },
           "connections": {
-            "I": [ 44 ],
-            "O": [ 24 ]
+            "I": [ 30 ],
+            "O": [ 23 ]
           }
         },
         "gu_OBUF_O": {
@@ -9425,8 +9187,8 @@
             "O": "output"
           },
           "connections": {
-            "I": [ 44 ],
-            "O": [ 17 ]
+            "I": [ 30 ],
+            "O": [ 16 ]
           }
         },
         "led_OBUF_O": {
@@ -9442,8 +9204,8 @@
             "O": "output"
           },
           "connections": {
-            "I": [ 45 ],
-            "O": [ 10 ]
+            "I": [ 31 ],
+            "O": [ 9 ]
           }
         },
         "led_OBUF_O_1": {
@@ -9459,8 +9221,8 @@
             "O": "output"
           },
           "connections": {
-            "I": [ 46 ],
-            "O": [ 9 ]
+            "I": [ 32 ],
+            "O": [ 8 ]
           }
         },
         "led_OBUF_O_2": {
@@ -9476,8 +9238,8 @@
             "O": "output"
           },
           "connections": {
-            "I": [ 47 ],
-            "O": [ 8 ]
+            "I": [ 33 ],
+            "O": [ 7 ]
           }
         },
         "led_OBUF_O_3": {
@@ -9493,34 +9255,32 @@
             "O": "output"
           },
           "connections": {
-            "I": [ 48 ],
-            "O": [ 7 ]
+            "I": [ 34 ],
+            "O": [ 6 ]
           }
         },
-        "u_module_leds.led_LUT1_F": {
+        "u_decoder.ab_IBUF_O": {
           "hide_name": 0,
-          "type": "LUT1",
+          "type": "IBUF",
           "parameters": {
-            "INIT": "01"
           },
           "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\Diego\\Desktop\\DISENO~1\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:135.23-136.15"
+            "keep": "00000000000000000000000000000001"
           },
           "port_directions": {
-            "F": "output",
-            "I0": "input"
+            "I": "input",
+            "O": "output"
           },
           "connections": {
-            "F": [ 45 ],
-            "I0": [ 29 ]
+            "I": [ 2 ],
+            "O": [ 31 ]
           }
         },
-        "u_module_leds.led_LUT2_F": {
+        "u_decoder.bb_LUT2_F": {
           "hide_name": 0,
           "type": "LUT2",
           "parameters": {
-            "INIT": "1001"
+            "INIT": "0110"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
@@ -9532,16 +9292,33 @@
             "I1": "input"
           },
           "connections": {
-            "F": [ 46 ],
-            "I0": [ 29 ],
-            "I1": [ 33 ]
+            "F": [ 32 ],
+            "I0": [ 31 ],
+            "I1": [ 35 ]
           }
         },
-        "u_module_leds.led_LUT3_F": {
+        "u_decoder.bg_IBUF_O": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 3 ],
+            "O": [ 35 ]
+          }
+        },
+        "u_decoder.cb_LUT3_F": {
           "hide_name": 0,
           "type": "LUT3",
           "parameters": {
-            "INIT": "01101001"
+            "INIT": "10010110"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
@@ -9554,17 +9331,34 @@
             "I2": "input"
           },
           "connections": {
-            "F": [ 47 ],
-            "I0": [ 29 ],
-            "I1": [ 37 ],
-            "I2": [ 33 ]
+            "F": [ 33 ],
+            "I0": [ 31 ],
+            "I1": [ 36 ],
+            "I2": [ 35 ]
           }
         },
-        "u_module_leds.led_LUT4_F": {
+        "u_decoder.cg_IBUF_O": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 4 ],
+            "O": [ 36 ]
+          }
+        },
+        "u_decoder.db_LUT4_F": {
           "hide_name": 0,
           "type": "LUT4",
           "parameters": {
-            "INIT": "1001011001101001"
+            "INIT": "0110100110010110"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
@@ -9578,14 +9372,31 @@
             "I3": "input"
           },
           "connections": {
-            "F": [ 48 ],
-            "I0": [ 29 ],
-            "I1": [ 41 ],
-            "I2": [ 37 ],
-            "I3": [ 33 ]
+            "F": [ 34 ],
+            "I0": [ 31 ],
+            "I1": [ 37 ],
+            "I2": [ 36 ],
+            "I3": [ 35 ]
           }
         },
-        "u_module_seg.ad_LUT4_F": {
+        "u_decoder.dg_IBUF_O": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 5 ],
+            "O": [ 37 ]
+          }
+        },
+        "u_seg.ad_LUT4_F": {
           "hide_name": 0,
           "type": "LUT4",
           "parameters": {
@@ -9603,14 +9414,14 @@
             "I3": "input"
           },
           "connections": {
-            "F": [ 25 ],
-            "I0": [ 41 ],
-            "I1": [ 37 ],
-            "I2": [ 29 ],
-            "I3": [ 33 ]
+            "F": [ 24 ],
+            "I0": [ 37 ],
+            "I1": [ 36 ],
+            "I2": [ 31 ],
+            "I3": [ 35 ]
           }
         },
-        "u_module_seg.bd_LUT4_F": {
+        "u_seg.bd_LUT4_F": {
           "hide_name": 0,
           "type": "LUT4",
           "parameters": {
@@ -9628,14 +9439,14 @@
             "I3": "input"
           },
           "connections": {
-            "F": [ 30 ],
-            "I0": [ 37 ],
-            "I1": [ 41 ],
-            "I2": [ 33 ],
-            "I3": [ 29 ]
+            "F": [ 25 ],
+            "I0": [ 36 ],
+            "I1": [ 37 ],
+            "I2": [ 35 ],
+            "I3": [ 31 ]
           }
         },
-        "u_module_seg.cd_LUT4_F": {
+        "u_seg.cd_LUT4_F": {
           "hide_name": 0,
           "type": "LUT4",
           "parameters": {
@@ -9653,31 +9464,14 @@
             "I3": "input"
           },
           "connections": {
-            "F": [ 34 ],
-            "I0": [ 41 ],
-            "I1": [ 29 ],
-            "I2": [ 33 ],
-            "I3": [ 37 ]
+            "F": [ 26 ],
+            "I0": [ 37 ],
+            "I1": [ 31 ],
+            "I2": [ 35 ],
+            "I3": [ 36 ]
           }
         },
-        "u_module_seg.clk_IBUF_O": {
-          "hide_name": 0,
-          "type": "IBUF",
-          "parameters": {
-          },
-          "attributes": {
-            "keep": "00000000000000000000000000000001"
-          },
-          "port_directions": {
-            "I": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I": [ 2 ],
-            "O": [ 27 ]
-          }
-        },
-        "u_module_seg.dd_LUT4_F": {
+        "u_seg.dd_LUT4_F": {
           "hide_name": 0,
           "type": "LUT4",
           "parameters": {
@@ -9695,14 +9489,14 @@
             "I3": "input"
           },
           "connections": {
-            "F": [ 38 ],
-            "I0": [ 41 ],
-            "I1": [ 37 ],
-            "I2": [ 29 ],
-            "I3": [ 33 ]
+            "F": [ 27 ],
+            "I0": [ 37 ],
+            "I1": [ 36 ],
+            "I2": [ 31 ],
+            "I3": [ 35 ]
           }
         },
-        "u_module_seg.ed_LUT4_F": {
+        "u_seg.ed_LUT4_F": {
           "hide_name": 0,
           "type": "LUT4",
           "parameters": {
@@ -9720,14 +9514,14 @@
             "I3": "input"
           },
           "connections": {
-            "F": [ 42 ],
-            "I0": [ 29 ],
-            "I1": [ 37 ],
-            "I2": [ 33 ],
-            "I3": [ 41 ]
+            "F": [ 28 ],
+            "I0": [ 31 ],
+            "I1": [ 36 ],
+            "I2": [ 35 ],
+            "I3": [ 37 ]
           }
         },
-        "u_module_seg.fd_LUT4_F": {
+        "u_seg.fd_LUT4_F": {
           "hide_name": 0,
           "type": "LUT4",
           "parameters": {
@@ -9745,18 +9539,18 @@
             "I3": "input"
           },
           "connections": {
-            "F": [ 43 ],
-            "I0": [ 41 ],
-            "I1": [ 29 ],
-            "I2": [ 37 ],
-            "I3": [ 33 ]
+            "F": [ 29 ],
+            "I0": [ 37 ],
+            "I1": [ 31 ],
+            "I2": [ 36 ],
+            "I3": [ 35 ]
           }
         },
-        "u_module_seg.gd_LUT4_F": {
+        "u_seg.gd_LUT4_F": {
           "hide_name": 0,
           "type": "LUT4",
           "parameters": {
-            "INIT": "1111111111111000"
+            "INIT": "0011001111100000"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
@@ -9770,553 +9564,421 @@
             "I3": "input"
           },
           "connections": {
-            "F": [ 44 ],
-            "I0": [ 33 ],
-            "I1": [ 41 ],
-            "I2": [ 37 ],
-            "I3": [ 29 ]
+            "F": [ 30 ],
+            "I0": [ 37 ],
+            "I1": [ 31 ],
+            "I2": [ 35 ],
+            "I3": [ 36 ]
           }
         }
       },
       "netnames": {
         "ab": {
           "hide_name": 0,
-          "bits": [ 29 ],
+          "bits": [ 31 ],
           "attributes": {
-            "src": "src/top.sv:36.11-36.13"
+            "src": "src/top.sv:19.11-19.13"
           }
         },
         "ad": {
           "hide_name": 0,
-          "bits": [ 18 ],
+          "bits": [ 17 ],
           "attributes": {
             "src": "src/top.sv:15.18-15.20"
           }
         },
         "ag": {
           "hide_name": 0,
-          "bits": [ 3 ],
+          "bits": [ 2 ],
           "attributes": {
-            "src": "src/top.sv:8.18-8.20"
-          }
-        },
-        "ag_ff1": {
-          "hide_name": 0,
-          "bits": [ 28 ],
-          "attributes": {
-            "src": "src/top.sv:21.11-21.17"
-          }
-        },
-        "ag_ff1_DFF_Q_D": {
-          "hide_name": 0,
-          "bits": [ 26 ],
-          "attributes": {
-          }
-        },
-        "ag_sync": {
-          "hide_name": 0,
-          "bits": [ 29 ],
-          "attributes": {
-            "src": "src/top.sv:21.19-21.26"
+            "src": "src/top.sv:7.18-7.20"
           }
         },
         "au": {
           "hide_name": 0,
-          "bits": [ 11 ],
+          "bits": [ 10 ],
           "attributes": {
-            "src": "src/top.sv:14.18-14.20"
+            "src": "src/top.sv:13.18-13.20"
           }
         },
         "bb": {
           "hide_name": 0,
-          "bits": [ 49 ],
+          "bits": [ 32 ],
           "attributes": {
-            "src": "src/top.sv:36.15-36.17",
-            "unused_bits": "0 "
+            "src": "src/top.sv:19.15-19.17"
           }
         },
         "bd": {
           "hide_name": 0,
-          "bits": [ 19 ],
+          "bits": [ 18 ],
           "attributes": {
             "src": "src/top.sv:15.22-15.24"
           }
         },
         "bg": {
           "hide_name": 0,
-          "bits": [ 4 ],
+          "bits": [ 3 ],
           "attributes": {
-            "src": "src/top.sv:8.22-8.24"
-          }
-        },
-        "bg_ff1": {
-          "hide_name": 0,
-          "bits": [ 32 ],
-          "attributes": {
-            "src": "src/top.sv:22.11-22.17"
-          }
-        },
-        "bg_ff1_DFF_Q_D": {
-          "hide_name": 0,
-          "bits": [ 31 ],
-          "attributes": {
-          }
-        },
-        "bg_sync": {
-          "hide_name": 0,
-          "bits": [ 33 ],
-          "attributes": {
-            "src": "src/top.sv:22.19-22.26"
+            "src": "src/top.sv:7.22-7.24"
           }
         },
         "binario": {
           "hide_name": 0,
-          "bits": [ 49, 49, 49, 29 ],
+          "bits": [ 34, 33, 32, 31 ],
           "attributes": {
-            "src": "src/top.sv:37.17-37.24",
-            "unused_bits": "0 1 2"
+            "src": "src/top.sv:26.17-26.24"
           }
         },
         "bu": {
           "hide_name": 0,
-          "bits": [ 12 ],
+          "bits": [ 11 ],
           "attributes": {
-            "src": "src/top.sv:14.22-14.24"
+            "src": "src/top.sv:13.22-13.24"
           }
         },
         "cb": {
           "hide_name": 0,
-          "bits": [ 49 ],
+          "bits": [ 33 ],
           "attributes": {
-            "src": "src/top.sv:36.19-36.21",
-            "unused_bits": "0 "
+            "src": "src/top.sv:19.19-19.21"
           }
         },
         "cd": {
           "hide_name": 0,
-          "bits": [ 20 ],
+          "bits": [ 19 ],
           "attributes": {
             "src": "src/top.sv:15.26-15.28"
           }
         },
         "cg": {
           "hide_name": 0,
-          "bits": [ 5 ],
+          "bits": [ 4 ],
           "attributes": {
-            "src": "src/top.sv:8.26-8.28"
-          }
-        },
-        "cg_ff1": {
-          "hide_name": 0,
-          "bits": [ 36 ],
-          "attributes": {
-            "src": "src/top.sv:23.11-23.17"
-          }
-        },
-        "cg_ff1_DFF_Q_D": {
-          "hide_name": 0,
-          "bits": [ 35 ],
-          "attributes": {
-          }
-        },
-        "cg_sync": {
-          "hide_name": 0,
-          "bits": [ 37 ],
-          "attributes": {
-            "src": "src/top.sv:23.19-23.26"
-          }
-        },
-        "clk": {
-          "hide_name": 0,
-          "bits": [ 2 ],
-          "attributes": {
-            "src": "src/top.sv:5.18-5.21"
+            "src": "src/top.sv:7.26-7.28"
           }
         },
         "cu": {
           "hide_name": 0,
-          "bits": [ 13 ],
+          "bits": [ 12 ],
           "attributes": {
-            "src": "src/top.sv:14.26-14.28"
+            "src": "src/top.sv:13.26-13.28"
           }
         },
         "db": {
           "hide_name": 0,
-          "bits": [ 49 ],
+          "bits": [ 34 ],
           "attributes": {
-            "src": "src/top.sv:36.23-36.25",
-            "unused_bits": "0 "
+            "src": "src/top.sv:19.23-19.25"
           }
         },
         "dd": {
           "hide_name": 0,
-          "bits": [ 21 ],
+          "bits": [ 20 ],
           "attributes": {
             "src": "src/top.sv:15.30-15.32"
           }
         },
         "dg": {
           "hide_name": 0,
-          "bits": [ 6 ],
+          "bits": [ 5 ],
           "attributes": {
-            "src": "src/top.sv:8.30-8.32"
-          }
-        },
-        "dg_ff1": {
-          "hide_name": 0,
-          "bits": [ 40 ],
-          "attributes": {
-            "src": "src/top.sv:24.11-24.17"
-          }
-        },
-        "dg_ff1_DFF_Q_D": {
-          "hide_name": 0,
-          "bits": [ 39 ],
-          "attributes": {
-          }
-        },
-        "dg_sync": {
-          "hide_name": 0,
-          "bits": [ 41 ],
-          "attributes": {
-            "src": "src/top.sv:24.19-24.26"
+            "src": "src/top.sv:7.30-7.32"
           }
         },
         "du": {
           "hide_name": 0,
-          "bits": [ 14 ],
+          "bits": [ 13 ],
           "attributes": {
-            "src": "src/top.sv:14.30-14.32"
+            "src": "src/top.sv:13.30-13.32"
           }
         },
         "ed": {
           "hide_name": 0,
-          "bits": [ 22 ],
+          "bits": [ 21 ],
           "attributes": {
             "src": "src/top.sv:15.34-15.36"
           }
         },
         "eu": {
           "hide_name": 0,
-          "bits": [ 15 ],
+          "bits": [ 14 ],
           "attributes": {
-            "src": "src/top.sv:14.34-14.36"
+            "src": "src/top.sv:13.34-13.36"
           }
         },
         "fd": {
           "hide_name": 0,
-          "bits": [ 23 ],
+          "bits": [ 22 ],
           "attributes": {
             "src": "src/top.sv:15.38-15.40"
           }
         },
         "fu": {
           "hide_name": 0,
-          "bits": [ 16 ],
+          "bits": [ 15 ],
           "attributes": {
-            "src": "src/top.sv:14.38-14.40"
+            "src": "src/top.sv:13.38-13.40"
           }
         },
         "gd": {
           "hide_name": 0,
-          "bits": [ 24 ],
+          "bits": [ 23 ],
           "attributes": {
             "src": "src/top.sv:15.42-15.44"
           }
         },
         "gu": {
           "hide_name": 0,
-          "bits": [ 17 ],
+          "bits": [ 16 ],
           "attributes": {
-            "src": "src/top.sv:14.42-14.44"
+            "src": "src/top.sv:13.42-13.44"
           }
         },
         "led": {
           "hide_name": 0,
-          "bits": [ 7, 8, 9, 10 ],
+          "bits": [ 6, 7, 8, 9 ],
           "attributes": {
-            "src": "src/top.sv:11.24-11.27"
+            "src": "src/top.sv:10.24-10.27"
           }
         },
         "u_decoder.ab": {
           "hide_name": 0,
-          "bits": [ 29 ],
+          "bits": [ 31 ],
           "attributes": {
             "hdlname": "u_decoder ab",
-            "src": "src/top.sv:39.13-42.6|src/module_decoder.sv:3.18-3.20"
+            "src": "src/top.sv:20.13-23.6|src/module_decoder.sv:4.16-4.18"
           }
         },
         "u_decoder.ag": {
           "hide_name": 0,
-          "bits": [ 29 ],
+          "bits": [ 31 ],
           "attributes": {
             "hdlname": "u_decoder ag",
-            "src": "src/top.sv:39.13-42.6|src/module_decoder.sv:2.18-2.20"
+            "src": "src/top.sv:20.13-23.6|src/module_decoder.sv:3.16-3.18"
           }
         },
         "u_decoder.bb": {
           "hide_name": 0,
-          "bits": [ 49 ],
+          "bits": [ 32 ],
           "attributes": {
             "hdlname": "u_decoder bb",
-            "src": "src/top.sv:39.13-42.6|src/module_decoder.sv:3.22-3.24",
-            "unused_bits": "0 "
+            "src": "src/top.sv:20.13-23.6|src/module_decoder.sv:4.20-4.22"
           }
         },
         "u_decoder.bg": {
           "hide_name": 0,
-          "bits": [ 33 ],
+          "bits": [ 35 ],
           "attributes": {
             "hdlname": "u_decoder bg",
-            "src": "src/top.sv:39.13-42.6|src/module_decoder.sv:2.22-2.24"
+            "src": "src/top.sv:20.13-23.6|src/module_decoder.sv:3.20-3.22"
           }
         },
         "u_decoder.cb": {
           "hide_name": 0,
-          "bits": [ 49 ],
+          "bits": [ 33 ],
           "attributes": {
             "hdlname": "u_decoder cb",
-            "src": "src/top.sv:39.13-42.6|src/module_decoder.sv:3.26-3.28",
-            "unused_bits": "0 "
+            "src": "src/top.sv:20.13-23.6|src/module_decoder.sv:4.24-4.26"
           }
         },
         "u_decoder.cg": {
           "hide_name": 0,
-          "bits": [ 37 ],
+          "bits": [ 36 ],
           "attributes": {
             "hdlname": "u_decoder cg",
-            "src": "src/top.sv:39.13-42.6|src/module_decoder.sv:2.26-2.28"
+            "src": "src/top.sv:20.13-23.6|src/module_decoder.sv:3.24-3.26"
           }
         },
         "u_decoder.db": {
           "hide_name": 0,
-          "bits": [ 49 ],
+          "bits": [ 34 ],
           "attributes": {
             "hdlname": "u_decoder db",
-            "src": "src/top.sv:39.13-42.6|src/module_decoder.sv:3.30-3.32",
-            "unused_bits": "0 "
+            "src": "src/top.sv:20.13-23.6|src/module_decoder.sv:4.28-4.30"
           }
         },
         "u_decoder.dg": {
           "hide_name": 0,
-          "bits": [ 41 ],
+          "bits": [ 37 ],
           "attributes": {
             "hdlname": "u_decoder dg",
-            "src": "src/top.sv:39.13-42.6|src/module_decoder.sv:2.30-2.32"
+            "src": "src/top.sv:20.13-23.6|src/module_decoder.sv:3.28-3.30"
           }
         },
-        "u_module_leds.binario": {
+        "u_leds.binario": {
           "hide_name": 0,
-          "bits": [ 49, 49, 49, 29 ],
+          "bits": [ 34, 33, 32, 31 ],
           "attributes": {
-            "hdlname": "u_module_leds binario",
-            "src": "src/top.sv:49.17-52.6|src/module_leds.sv:2.24-2.31",
-            "unused_bits": "0 1 2"
+            "hdlname": "u_leds binario",
+            "src": "src/top.sv:29.17-32.6|src/module_leds.sv:5.24-5.31"
           }
         },
-        "u_module_leds.led": {
+        "u_leds.led": {
           "hide_name": 0,
-          "bits": [ 48, 47, 46, 45 ],
+          "bits": [ 34, 33, 32, 31 ],
           "attributes": {
-            "hdlname": "u_module_leds led",
-            "src": "src/top.sv:49.17-52.6|src/module_leds.sv:3.24-3.27"
+            "hdlname": "u_leds led",
+            "src": "src/top.sv:29.17-32.6|src/module_leds.sv:6.24-6.27"
           }
         },
-        "u_module_seg.A": {
+        "u_seg.A": {
           "hide_name": 0,
-          "bits": [ 29 ],
+          "bits": [ 31 ],
           "attributes": {
-            "hdlname": "u_module_seg A",
-            "src": "src/top.sv:57.16-62.6|src/module_seg.sv:7.24-7.25"
+            "hdlname": "u_seg A",
+            "src": "src/top.sv:35.16-39.6|src/module_seg.sv:7.18-7.19"
           }
         },
-        "u_module_seg.B": {
+        "u_seg.B": {
           "hide_name": 0,
-          "bits": [ 49 ],
+          "bits": [ 32 ],
           "attributes": {
-            "hdlname": "u_module_seg B",
-            "src": "src/top.sv:57.16-62.6|src/module_seg.sv:7.27-7.28",
-            "unused_bits": "0 "
+            "hdlname": "u_seg B",
+            "src": "src/top.sv:35.16-39.6|src/module_seg.sv:7.21-7.22"
           }
         },
-        "u_module_seg.C": {
+        "u_seg.C": {
           "hide_name": 0,
-          "bits": [ 49 ],
+          "bits": [ 33 ],
           "attributes": {
-            "hdlname": "u_module_seg C",
-            "src": "src/top.sv:57.16-62.6|src/module_seg.sv:7.30-7.31",
-            "unused_bits": "0 "
+            "hdlname": "u_seg C",
+            "src": "src/top.sv:35.16-39.6|src/module_seg.sv:7.24-7.25"
           }
         },
-        "u_module_seg.D": {
-          "hide_name": 0,
-          "bits": [ 49 ],
-          "attributes": {
-            "hdlname": "u_module_seg D",
-            "src": "src/top.sv:57.16-62.6|src/module_seg.sv:7.33-7.34",
-            "unused_bits": "0 "
-          }
-        },
-        "u_module_seg.ad": {
-          "hide_name": 0,
-          "bits": [ 25 ],
-          "attributes": {
-            "hdlname": "u_module_seg ad",
-            "src": "src/top.sv:57.16-62.6|src/module_seg.sv:9.24-9.26"
-          }
-        },
-        "u_module_seg.au": {
-          "hide_name": 0,
-          "bits": [ 25 ],
-          "attributes": {
-            "hdlname": "u_module_seg au",
-            "src": "src/top.sv:57.16-62.6|src/module_seg.sv:8.24-8.26"
-          }
-        },
-        "u_module_seg.bd": {
-          "hide_name": 0,
-          "bits": [ 30 ],
-          "attributes": {
-            "hdlname": "u_module_seg bd",
-            "src": "src/top.sv:57.16-62.6|src/module_seg.sv:9.28-9.30"
-          }
-        },
-        "u_module_seg.bu": {
-          "hide_name": 0,
-          "bits": [ 30 ],
-          "attributes": {
-            "hdlname": "u_module_seg bu",
-            "src": "src/top.sv:57.16-62.6|src/module_seg.sv:8.28-8.30"
-          }
-        },
-        "u_module_seg.cd": {
+        "u_seg.D": {
           "hide_name": 0,
           "bits": [ 34 ],
           "attributes": {
-            "hdlname": "u_module_seg cd",
-            "src": "src/top.sv:57.16-62.6|src/module_seg.sv:9.32-9.34"
+            "hdlname": "u_seg D",
+            "src": "src/top.sv:35.16-39.6|src/module_seg.sv:7.27-7.28"
           }
         },
-        "u_module_seg.clk": {
+        "u_seg.ad": {
+          "hide_name": 0,
+          "bits": [ 24 ],
+          "attributes": {
+            "hdlname": "u_seg ad",
+            "src": "src/top.sv:35.16-39.6|src/module_seg.sv:11.18-11.20"
+          }
+        },
+        "u_seg.au": {
+          "hide_name": 0,
+          "bits": [ 24 ],
+          "attributes": {
+            "hdlname": "u_seg au",
+            "src": "src/top.sv:35.16-39.6|src/module_seg.sv:9.18-9.20"
+          }
+        },
+        "u_seg.bd": {
+          "hide_name": 0,
+          "bits": [ 25 ],
+          "attributes": {
+            "hdlname": "u_seg bd",
+            "src": "src/top.sv:35.16-39.6|src/module_seg.sv:11.22-11.24"
+          }
+        },
+        "u_seg.bu": {
+          "hide_name": 0,
+          "bits": [ 25 ],
+          "attributes": {
+            "hdlname": "u_seg bu",
+            "src": "src/top.sv:35.16-39.6|src/module_seg.sv:9.22-9.24"
+          }
+        },
+        "u_seg.cd": {
+          "hide_name": 0,
+          "bits": [ 26 ],
+          "attributes": {
+            "hdlname": "u_seg cd",
+            "src": "src/top.sv:35.16-39.6|src/module_seg.sv:11.26-11.28"
+          }
+        },
+        "u_seg.cu": {
+          "hide_name": 0,
+          "bits": [ 26 ],
+          "attributes": {
+            "hdlname": "u_seg cu",
+            "src": "src/top.sv:35.16-39.6|src/module_seg.sv:9.26-9.28"
+          }
+        },
+        "u_seg.dd": {
           "hide_name": 0,
           "bits": [ 27 ],
           "attributes": {
-            "hdlname": "u_module_seg clk",
-            "src": "src/top.sv:57.16-62.6|src/module_seg.sv:6.24-6.27"
+            "hdlname": "u_seg dd",
+            "src": "src/top.sv:35.16-39.6|src/module_seg.sv:11.30-11.32"
           }
         },
-        "u_module_seg.cu": {
+        "u_seg.du": {
           "hide_name": 0,
-          "bits": [ 34 ],
+          "bits": [ 27 ],
           "attributes": {
-            "hdlname": "u_module_seg cu",
-            "src": "src/top.sv:57.16-62.6|src/module_seg.sv:8.32-8.34"
+            "hdlname": "u_seg du",
+            "src": "src/top.sv:35.16-39.6|src/module_seg.sv:9.30-9.32"
           }
         },
-        "u_module_seg.d7": {
+        "u_seg.ed": {
           "hide_name": 0,
-          "bits": [ 44, 43, 42, 38, 34, 30, 25 ],
+          "bits": [ 28 ],
           "attributes": {
-            "hdlname": "u_module_seg d7",
-            "src": "src/top.sv:57.16-62.6|src/module_seg.sv:32.17-32.19"
+            "hdlname": "u_seg ed",
+            "src": "src/top.sv:35.16-39.6|src/module_seg.sv:11.34-11.36"
           }
         },
-        "u_module_seg.d_drive": {
+        "u_seg.eu": {
           "hide_name": 0,
-          "bits": [ 44, 43, 42, 38, 34, 30, 25 ],
+          "bits": [ 28 ],
           "attributes": {
-            "hdlname": "u_module_seg d_drive",
-            "src": "src/top.sv:57.16-62.6|src/module_seg.sv:36.17-36.24"
+            "hdlname": "u_seg eu",
+            "src": "src/top.sv:35.16-39.6|src/module_seg.sv:9.34-9.36"
           }
         },
-        "u_module_seg.dd": {
+        "u_seg.fd": {
           "hide_name": 0,
-          "bits": [ 38 ],
+          "bits": [ 29 ],
           "attributes": {
-            "hdlname": "u_module_seg dd",
-            "src": "src/top.sv:57.16-62.6|src/module_seg.sv:9.36-9.38"
+            "hdlname": "u_seg fd",
+            "src": "src/top.sv:35.16-39.6|src/module_seg.sv:11.38-11.40"
           }
         },
-        "u_module_seg.du": {
+        "u_seg.fu": {
           "hide_name": 0,
-          "bits": [ 38 ],
+          "bits": [ 29 ],
           "attributes": {
-            "hdlname": "u_module_seg du",
-            "src": "src/top.sv:57.16-62.6|src/module_seg.sv:8.36-8.38"
+            "hdlname": "u_seg fu",
+            "src": "src/top.sv:35.16-39.6|src/module_seg.sv:9.38-9.40"
           }
         },
-        "u_module_seg.ed": {
+        "u_seg.gd": {
           "hide_name": 0,
-          "bits": [ 42 ],
+          "bits": [ 30 ],
           "attributes": {
-            "hdlname": "u_module_seg ed",
-            "src": "src/top.sv:57.16-62.6|src/module_seg.sv:9.40-9.42"
+            "hdlname": "u_seg gd",
+            "src": "src/top.sv:35.16-39.6|src/module_seg.sv:11.42-11.44"
           }
         },
-        "u_module_seg.eu": {
+        "u_seg.gu": {
           "hide_name": 0,
-          "bits": [ 42 ],
+          "bits": [ 30 ],
           "attributes": {
-            "hdlname": "u_module_seg eu",
-            "src": "src/top.sv:57.16-62.6|src/module_seg.sv:8.40-8.42"
+            "hdlname": "u_seg gu",
+            "src": "src/top.sv:35.16-39.6|src/module_seg.sv:9.42-9.44"
           }
         },
-        "u_module_seg.fd": {
+        "u_seg.seg": {
           "hide_name": 0,
-          "bits": [ 43 ],
+          "bits": [ 30, 29, 28, 27, 26, 25, 24 ],
           "attributes": {
-            "hdlname": "u_module_seg fd",
-            "src": "src/top.sv:57.16-62.6|src/module_seg.sv:9.44-9.46"
+            "hdlname": "u_seg seg",
+            "src": "src/top.sv:35.16-39.6|src/module_seg.sv:14.17-14.20"
           }
         },
-        "u_module_seg.fu": {
+        "u_seg.val": {
           "hide_name": 0,
-          "bits": [ 43 ],
+          "bits": [ 34, 33, 32, 31 ],
           "attributes": {
-            "hdlname": "u_module_seg fu",
-            "src": "src/top.sv:57.16-62.6|src/module_seg.sv:8.44-8.46"
-          }
-        },
-        "u_module_seg.gd": {
-          "hide_name": 0,
-          "bits": [ 44 ],
-          "attributes": {
-            "hdlname": "u_module_seg gd",
-            "src": "src/top.sv:57.16-62.6|src/module_seg.sv:9.48-9.50"
-          }
-        },
-        "u_module_seg.gu": {
-          "hide_name": 0,
-          "bits": [ 44 ],
-          "attributes": {
-            "hdlname": "u_module_seg gu",
-            "src": "src/top.sv:57.16-62.6|src/module_seg.sv:8.48-8.50"
-          }
-        },
-        "u_module_seg.seg7$func$src/module_seg.sv:31$117.x": {
-          "hide_name": 0,
-          "bits": [ 49, 49, 49, 49 ],
-          "attributes": {
-            "hdlname": "u_module_seg seg7$func$src/module_seg.sv:31$117.x",
-            "nosync": "00000000000000000000000000000001",
-            "src": "src/top.sv:57.16-62.6|src/module_seg.sv:13.59-13.60",
-            "unused_bits": "0 1 2 3"
-          }
-        },
-        "u_module_seg.u7": {
-          "hide_name": 0,
-          "bits": [ 44, 43, 42, 38, 34, 30, 25 ],
-          "attributes": {
-            "hdlname": "u_module_seg u7",
-            "src": "src/top.sv:57.16-62.6|src/module_seg.sv:31.17-31.19"
-          }
-        },
-        "u_module_seg.u_drive": {
-          "hide_name": 0,
-          "bits": [ 44, 43, 42, 38, 34, 30, 25 ],
-          "attributes": {
-            "hdlname": "u_module_seg u_drive",
-            "src": "src/top.sv:57.16-62.6|src/module_seg.sv:35.17-35.24"
+            "hdlname": "u_seg val",
+            "src": "src/top.sv:35.16-39.6|src/module_seg.sv:13.17-13.20"
           }
         }
       }

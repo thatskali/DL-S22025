@@ -1,22 +1,33 @@
-# ==== Rutas ====
-SRC_DIR     := src
-TB_DIR      := tb
-CONSTR_DIR  := constr
-BUILD_DIR   := build
+# ------------------------------
+# Tang Nano 9K - Makefile
+# ------------------------------
+SHELL := /bin/sh
 
-# ==== Herramientas (puedes sobreescribirlas al invocar make) ====
-YOSYS       ?= yosys
-NEXTPNR     ?= nextpnr-gowin
-GOWIN_PACK  ?= gowin_pack
-PROG        ?= openFPGALoader
+# Herramientas (asume que están en el PATH)
+YOSYS       := yosys
+NEXTPNR     := nextpnr-gowin
+GOWIN_PACK  := gowin_pack
+OPENLOADER  := openFPGALoader
 
-# ==== Dispositivo Tang Nano 9K ====
-FAMILY   := GW1N-9C
-DEVICE   := GW1NR-LV9QN88PC6/I5
-PACKAGE  := QFN88P
+# Dispositivo / placa
+FAMILY  := GW1N-9C
+DEVICE  := GW1NR-LV9QN88PC6/I5
+BOARD   := tangnano9k
 
-# ==== Fuentes ====
-SRC := \
+# Carpetas / ficheros
+SRC_DIR := src
+TB_DIR  := tb
+CONSTR  := constr/module_cons.cst
+BUILD   := build
+
+TOP     := top
+JSON    := $(BUILD)/top.json
+PNRJSON := $(BUILD)/top_pnr.json
+BITFS   := $(BUILD)/top.fs
+SIMOUT  := $(BUILD)/sim.out
+
+# Fuentes
+SRCS := \
   $(SRC_DIR)/top.sv \
   $(SRC_DIR)/module_decoder.sv \
   $(SRC_DIR)/module_leds.sv \
@@ -28,49 +39,44 @@ SRC := \
 
 TB := $(TB_DIR)/top_tb.sv
 
-# ==== Artefactos ====
-JSON     := $(BUILD_DIR)/top.json
-PNR_JSON := $(BUILD_DIR)/top_pnr.json
-FS       := $(BUILD_DIR)/top.fs
-CST      := $(CONSTR_DIR)/module_cons.cst
-
-# ==== Targets por defecto ====
-.PHONY: all sim run synth pnr pack flash clean
+# ---------------------------------------
+# Targets
+# ---------------------------------------
+.PHONY: all sim synth pnr pack prog flash clean
 
 all: synth pnr pack
 
-# ---- Simulación (Icarus) ----
-sim: $(BUILD_DIR)
-	iverilog -g2012 -Wall -o "$(BUILD_DIR)/sim.out" -s top_tb $(TB) $(SRC)
+$(BUILD):
+	mkdir -p $(BUILD)
+
+sim: $(BUILD)
+	iverilog -g2012 -Wall -o "$(SIMOUT)" -s top_tb \
+		$(TB) $(SRCS)
 	@echo "[OK] Compilación de simulación."
+	vvp "$(SIMOUT)"
 
-run: sim
-	vvp "$(BUILD_DIR)/sim.out"
-	@echo "[OK] Simulación ejecutada. Revisa wave.vcd si generas volcado."
-
-# ---- Síntesis (Yosys) ----
-synth: $(BUILD_DIR)
-	$(YOSYS) -p "read_verilog -sv $(SRC); synth_gowin -top top -json \"$(JSON)\""
+synth: $(BUILD)
+	$(YOSYS) -p "read_verilog -sv $(SRCS); synth_gowin -top $(TOP) -json \"$(JSON)\""
 	@echo "[OK] Síntesis Yosys -> $(JSON)"
 
-# ---- Place & Route (nextpnr) ----
 pnr: synth
-	$(NEXTPNR) --family $(FAMILY) --device "$(DEVICE)" --json "$(JSON)" --cst "$(CST)" --write "$(PNR_JSON)"
-	@echo "[OK] P&R nextpnr -> $(PNR_JSON)"
+	$(NEXTPNR) --family $(FAMILY) --device "$(DEVICE)" \
+		--json "$(JSON)" --cst "$(CONSTR)" --write "$(PNRJSON)"
+	@echo "[OK] P&R nextpnr -> $(PNRJSON)"
 
-# ---- Empaquetado bitstream (gowin_pack) ----
 pack: pnr
-	$(GOWIN_PACK) -o "$(FS)" -d $(FAMILY) "$(PNR_JSON)"
-	@echo "[OK] Bitstream -> $(FS)"
+	$(GOWIN_PACK) -d $(FAMILY) -o "$(BITFS)" "$(PNRJSON)"
+	@echo "[OK] Empaquetado gowin_pack -> $(BITFS)"
 
-# ---- Programación (openFPGALoader) ----
+# Cargar a SRAM (volátil). Alias "prog"
+prog: sram
+sram: pack
+	$(OPENLOADER) -b $(BOARD) "$(BITFS)"
+
+# Grabar en flash (persistente)
 flash: pack
-	$(PROG) -b tangnano9k "$(FS)"
-	@echo "[OK] Programación completada."
-
-$(BUILD_DIR):
-	mkdir -p $(BUILD_DIR)
+	$(OPENLOADER) -b $(BOARD) -f "$(BITFS)"
 
 clean:
-	rm -rf $(BUILD_DIR)
-	@echo "[OK] Limpieza."
+	rm -rf $(BUILD)
+	@echo "[OK] Limpieza completada."
