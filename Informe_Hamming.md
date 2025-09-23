@@ -29,7 +29,7 @@ El objetivo del proyecto fue **llevar la teoría del código de Hamming a la pr�
 
 Se usaron testbenches para validar cada subsistema y se sintetizó el diseño completo utilizando **OssCadSuite** junto con **Yosys** y **nextpnr**.  
 
-📌 *Aquí se puede incluir el diagrama de bloques general del sistema.*  
+*diagrama de bloques general del sistema.*  
 
 ---
 
@@ -42,7 +42,7 @@ El sistema se compone de los siguientes subsistemas:
 - **SB3 – LEDs**: despliegan la palabra corregida.  
 - **SB4 – Displays 7 segmentos**: muestran la palabra transmitida o la posición del error.  
 
-📌 *Aquí se puede incluir el diagrama de cada subsistema.*  
+ *diagrama de cada subsistema.*  
 
 ---
 
@@ -60,7 +60,7 @@ Genera el código Hamming agregando 3 bits de paridad a los 4 bits de datos.
 #### 3. Testbench
 Se probaron todas las combinaciones de 4 bits verificando que las palabras codificadas coincidieran con la teoría.  
 
-📌 *Aquí puede ir una tabla de verdad o captura de simulación.*  
+*captura de simulación.*  
 
 ---
 
@@ -80,7 +80,7 @@ Calcula el síndrome, determina si existe un error, corrige el bit afectado y en
 #### 3. Testbench
 Se forzaron errores en distintas posiciones y se verificó que el sistema los corrigiera.  
 
-📌 *Aquí puede ir un diagrama de tiempos con la corrección.*  
+*diagrama de tiempos con la corrección.*  
 
 ---
 
@@ -88,7 +88,7 @@ Se forzaron errores en distintas posiciones y se verificó que el sistema los co
 #### 1. Función
 Recibe la palabra corregida y la despliega en los LEDs de la FPGA.  
 
-📌 *Aquí puede ir un diagrama del cableado de LEDs.*  
+*diagrama del cableado de LEDs.*  
 
 ---
 
@@ -100,7 +100,7 @@ Muestra en los displays:
 
 Un switch selecciona cuál información se despliega.  
 
-📌 *Aquí puede ir el diagrama de conexión con transistores PNP.*  
+*diagrama de conexión con transistores PNP.*  
 
 ---
 
@@ -116,7 +116,7 @@ make pack   # Empaquetado
 make prog   # Programación en FPGA
 ```
 
-📌 *Aquí se puede incluir un extracto del reporte de recursos utilizados (JSON).*  
+ 
 
 ---
 
@@ -125,7 +125,7 @@ make prog   # Programación en FPGA
 - El síndrome coincidió siempre con la posición del error.  
 - Cuando no existía error, la salida fue igual a la palabra transmitida.  
 
-📌 *Aquí puede ir foto de la FPGA mostrando el resultado.*  
+*foto de la FPGA mostrando el resultado.*  
 
 ---
 
