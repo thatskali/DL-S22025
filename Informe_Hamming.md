@@ -42,8 +42,7 @@ El sistema se compone de los siguientes subsistemas:
 - **SB2 – Síndrome y corrector**: identifica la posición del error y lo corrige.  
 - **SB3 – LEDs**: despliegan la palabra corregida.  
 - **SB4 – Displays 7 segmentos**: muestran la palabra transmitida o la posición del error.  
-
- *diagrama de cada subsistema.*  
+ 
 
 ---
 
