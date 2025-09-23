@@ -29,7 +29,8 @@ El objetivo del proyecto fue **llevar la teoría del código de Hamming a la pr�
 
 Se usaron testbenches para validar cada subsistema y se sintetizó el diseño completo utilizando **OssCadSuite** junto con **Yosys** y **nextpnr**.  
 
-*diagrama de bloques general del sistema.*  
+![Top Module](Imagenes/module.png)
+  
 
 ---
 
