@@ -76,7 +76,7 @@ module hamming_secded_decoder (
 #### 1. Función
 Recibe la palabra corregida y la despliega en los LEDs de la FPGA.  
 
-*diagrama del cableado de LEDs.*  
+![Top Module](Imagenes/cableado.jpg)
 
 ---
 
@@ -113,7 +113,7 @@ make prog   # Programación en FPGA
 - El síndrome coincidió siempre con la posición del error.  
 - Cuando no existía error, la salida fue igual a la palabra transmitida.  
 
-*foto de la FPGA mostrando el resultado.*  
+![Top Module](Imagenes/resultado.jpg) 
 
 ---
 
