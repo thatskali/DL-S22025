@@ -55,7 +55,7 @@ module hamming_secded_encoder (
     output logic [7:0] code
 );
 ```
-
+![Top Module](Imagenes/Codificador.png)
 ---
 
 ### 4.3 Subsistema de síndrome y corrector
@@ -69,6 +69,7 @@ module hamming_secded_decoder (
     output logic double_error
 );
 ```
+![Top Module](Imagenes/Decdificador.png)
 ---
 
 ### 4.3 Subsistema de LEDs
@@ -87,7 +88,7 @@ Muestra en los displays:
 
 Un switch selecciona cuál información se despliega.  
 
-*diagrama de conexión con transistores PNP.*  
+![Top Module](Imagenes/segmentos.png) 
 
 ---
 
