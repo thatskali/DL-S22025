@@ -4,63 +4,86 @@
 module top (
     input  logic clk,
 
-    // Switches físicos en Gray (entradas async)
+    // Switches en Gray (entradas físicas)
     input  logic ag, bg, cg, dg,
 
-    // LEDs en la placa
+    // Switches extra del TB (no indispensables en hardware)
+    input  logic sw_rx,
+    input  logic sw_mode,
+
+    // LEDs en la placa (mostrar binario)
     output logic [3:0] led,
 
-    // 7 segmentos (común cátodo, activo en ALTO)
+    // 7 segmentos para "unidades" (a..g, activo en ALTO)
     output logic au, bu, cu, du, eu, fu, gu,
+    // 7 segmentos para "décimas" (a..g, activo en ALTO)
     output logic ad, bd, cd, dd, ed, fd, gd
 );
 
-    // ----------------------------------------------------------------
-    // Sincronizadores de 2 etapas para los switches (a clk)
-    // ----------------------------------------------------------------
-    logic ag_ff1, ag_sync;
-    logic bg_ff1, bg_sync;
-    logic cg_ff1, cg_sync;
-    logic dg_ff1, dg_sync;
-
-    always_ff @(posedge clk) begin
-        ag_ff1 <= ag;  ag_sync <= ag_ff1;
-        bg_ff1 <= bg;  bg_sync <= bg_ff1;
-        cg_ff1 <= cg;  cg_sync <= cg_ff1;
-        dg_ff1 <= dg;  dg_sync <= dg_ff1;
-    end
-
-    // ----------------------------------------------------------------
-    // Gray -> Binario
-    // ----------------------------------------------------------------
-    logic ab, bb, cb, db;      // bits binarios individuales
-    logic [3:0] binario;       // vector binario
-
+    // ---- Gray -> Binario (según PDF) ----
+    logic b3, b2, b1, b0;     // ab,bb,cb,db en tu notación anterior
+    logic [3:0] binario_sw;   // binario desde los switches
     decoder u_decoder (
-        .ag(ag_sync), .bg(bg_sync), .cg(cg_sync), .dg(dg_sync),
-        .ab(ab),      .bb(bb),      .cb(cb),      .db(db)
+        .ag(ag), .bg(bg), .cg(cg), .dg(dg),
+        .ab(b3), .bb(b2), .cb(b1), .db(b0)
+    );
+    assign binario_sw = {b3,b2,b1,b0};
+
+    // ---- Demo Hamming SECDED (8,4) ----
+    // Codificamos 4 bits de dato, detectamos/corregimos, y sacamos el dato corregido
+    logic [3:0] data_in_demo = 4'hA;     // cámbialo si quieres otra demo
+    logic [7:0] codeword;
+    logic [2:0] syndrome;
+    logic       overall_err;
+    logic [7:0] corrected_word;
+    logic [3:0] data_out_demo;
+
+    hamming_secded_encoder u_enc (
+        .d(data_in_demo),
+        .cw(codeword)
     );
 
-    assign binario = {ab, bb, cb, db};
+    hamming_secded_syndrome u_syn (
+        .cw(codeword),
+        .syn(syndrome),
+        .ov(overall_err)
+    );
 
-    // ----------------------------------------------------------------
-    // LEDs muestran el binario
-    // ----------------------------------------------------------------
-    module_leds u_module_leds (
-        .binario(binario),
+    hamming_secded_corrector u_cor (
+        .cw_in(codeword),
+        .syn(syndrome),
+        .ov(overall_err),
+        .cw_out(corrected_word)
+    );
+
+    hamming_secded_decoder u_dec (
+        .cw(corrected_word),
+        .d(data_out_demo)
+    );
+
+    // ---- Selección de fuente a mostrar (sw_mode) ----
+    // 0 = switches Gray->binario; 1 = dato corregido por Hamming
+    logic [3:0] value_to_show = sw_mode ? data_out_demo : binario_sw;
+
+    // ---- LEDs muestran el binario seleccionado ----
+    module_leds u_leds (
+        .binario(value_to_show),
         .led(led)
     );
 
-    // ----------------------------------------------------------------
-    // 7 segmentos (unidades y décimas) - cátodo común, activo en ALTO
-    // ----------------------------------------------------------------
-    module_seg u_module_seg (
+    // ---- 7 segmentos para ambas “pantallas” (dos juegos: u* y d*) ----
+    // Mostramos el mismo valor en ambas caras (si prefieres distinto, avísame)
+    module_seg u_seg (
         .clk(clk),
-        .A(ab), .B(bb), .C(cb), .D(db),
-        .au(au), .bu(bu), .cu(cu), .du(du), .eu(eu), .fu(fu), .gu(gu),
-        .ad(ad), .bd(bd), .cd(cd), .dd(dd), .ed(ed), .fd(fd), .gd(gd)
+        .val(value_to_show),
+
+        // Unidades
+        .a_u(au), .b_u(bu), .c_u(cu), .d_u(du), .e_u(eu), .f_u(fu), .g_u(gu),
+        // Décimas
+        .a_d(ad), .b_d(bd), .c_d(cd), .d_d(dd), .e_d(ed), .f_d(fd), .g_d(gd)
     );
 
 endmodule
 
 `default_nettype wire
+

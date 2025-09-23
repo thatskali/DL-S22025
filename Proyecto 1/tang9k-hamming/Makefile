@@ -1,68 +1,76 @@
-# Tang Nano 9K + SystemVerilog (OSS-CAD)
+# ==== Rutas ====
+SRC_DIR     := src
+TB_DIR      := tb
+CONSTR_DIR  := constr
+BUILD_DIR   := build
 
-# ====== Proyecto ======
-TOP        ?= top
-SRC        := $(wildcard src/*.sv)
-TB_FILE    ?= tb/module_top_tb.sv
-SIM_TOP    ?= top_tb
-BUILD_DIR  := build
+# ==== Herramientas (puedes sobreescribirlas al invocar make) ====
+YOSYS       ?= yosys
+NEXTPNR     ?= nextpnr-gowin
+GOWIN_PACK  ?= gowin_pack
+PROG        ?= openFPGALoader
 
-# ====== Herramientas ======
-YOSYS      ?= yosys
-NEXTPNR    ?= nextpnr-gowin
-PACK       ?= gowin_pack
-PROG       ?= openFPGALoader
-IVERILOG   ?= iverilog
-VVP        ?= vvp
-GTKWAVE    ?= gtkwave
+# ==== Dispositivo Tang Nano 9K ====
+FAMILY   := GW1N-9C
+DEVICE   := GW1NR-LV9QN88PC6/I5
+PACKAGE  := QFN88P
 
-# ====== Dispositivo ======
-FAMILY     ?= GW1N-9C
-DEVICE     ?= GW1NR-LV9QN88PC6/I5
-CST        ?= constr/module_cons.cst
+# ==== Fuentes ====
+SRC := \
+  $(SRC_DIR)/top.sv \
+  $(SRC_DIR)/module_decoder.sv \
+  $(SRC_DIR)/module_leds.sv \
+  $(SRC_DIR)/module_seg.sv \
+  $(SRC_DIR)/hamming_secded_encoder.sv \
+  $(SRC_DIR)/hamming_secded_syndrome.sv \
+  $(SRC_DIR)/hamming_secded_corrector.sv \
+  $(SRC_DIR)/hamming_secded_decoder.sv
 
-BITFILE    := $(BUILD_DIR)/$(TOP).fs
-JSON_RTL   := $(BUILD_DIR)/$(TOP).json
-JSON_PNR   := $(BUILD_DIR)/$(TOP)_pnr.json
-SIM_OUT    := $(BUILD_DIR)/sim.out
-VCD_FILE   ?= $(BUILD_DIR)/module_top_tb.vcd
+TB := $(TB_DIR)/top_tb.sv
 
-# ====== Reglas ======
-$(BUILD_DIR):
-	mkdir -p "$(BUILD_DIR)"
+# ==== Artefactos ====
+JSON     := $(BUILD_DIR)/top.json
+PNR_JSON := $(BUILD_DIR)/top_pnr.json
+FS       := $(BUILD_DIR)/top.fs
+CST      := $(CONSTR_DIR)/module_cons.cst
 
-.PHONY: all synth pnr pack bit prog sim wave clean show
+# ==== Targets por defecto ====
+.PHONY: all sim run synth pnr pack flash clean
 
-all: synth pnr pack prog
+all: synth pnr pack
 
-# Imprime qué archivos está viendo el wildcard (útil para depurar en Windows)
-show:
-	@echo SRC=$(SRC)
-
-synth: $(BUILD_DIR)
-	$(YOSYS) -p "read_verilog -sv $(SRC); synth_gowin -top $(TOP) -json \"$(JSON_RTL)\""
-
-pnr: synth
-	$(NEXTPNR) --family $(FAMILY) --device "$(DEVICE)" \
-	           --json "$(JSON_RTL)" --cst "$(CST)" \
-	           --write "$(JSON_PNR)"
-
-pack: pnr
-	$(PACK) -d $(FAMILY) -o "$(BITFILE)" "$(JSON_PNR)"
-
-bit: pack
-
-prog: bit
-	$(PROG) -b tangnano9k "$(BITFILE)"
-
-# --- Simulación (Icarus + VCD) ---
+# ---- Simulación (Icarus) ----
 sim: $(BUILD_DIR)
-	$(IVERILOG) -g2012 -Wall -o "$(SIM_OUT)" -s $(SIM_TOP) "$(TB_FILE)" $(SRC)
-	$(VVP) "$(SIM_OUT)"
+	iverilog -g2012 -Wall -o "$(BUILD_DIR)/sim.out" -s top_tb $(TB) $(SRC)
+	@echo "[OK] Compilación de simulación."
 
-wave: sim
-	$(GTKWAVE) "$(VCD_FILE)"
+run: sim
+	vvp "$(BUILD_DIR)/sim.out"
+	@echo "[OK] Simulación ejecutada. Revisa wave.vcd si generas volcado."
+
+# ---- Síntesis (Yosys) ----
+synth: $(BUILD_DIR)
+	$(YOSYS) -p "read_verilog -sv $(SRC); synth_gowin -top top -json \"$(JSON)\""
+	@echo "[OK] Síntesis Yosys -> $(JSON)"
+
+# ---- Place & Route (nextpnr) ----
+pnr: synth
+	$(NEXTPNR) --family $(FAMILY) --device "$(DEVICE)" --json "$(JSON)" --cst "$(CST)" --write "$(PNR_JSON)"
+	@echo "[OK] P&R nextpnr -> $(PNR_JSON)"
+
+# ---- Empaquetado bitstream (gowin_pack) ----
+pack: pnr
+	$(GOWIN_PACK) -o "$(FS)" -d $(FAMILY) "$(PNR_JSON)"
+	@echo "[OK] Bitstream -> $(FS)"
+
+# ---- Programación (openFPGALoader) ----
+flash: pack
+	$(PROG) -b tangnano9k "$(FS)"
+	@echo "[OK] Programación completada."
+
+$(BUILD_DIR):
+	mkdir -p $(BUILD_DIR)
 
 clean:
-	rm -rf "$(BUILD_DIR)"
-
+	rm -rf $(BUILD_DIR)
+	@echo "[OK] Limpieza."
